@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['image_1065',['Image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ab14d61117bea307514b6ea08fa1fbbe1',1,'ROCKY_NAMESPACE::Image::Image(PixelFormat format, unsigned s, unsigned t, unsigned r=1)'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a58edd1c45b4faeb5f789b0d036d02313',1,'ROCKY_NAMESPACE::Image::Image()']]],
+  ['image_1065',['Image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a58edd1c45b4faeb5f789b0d036d02313',1,'ROCKY_NAMESPACE::Image']]],
   ['image_1066',['image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html#a454d83d67530451fad5d3c96037fadae',1,'ROCKY_NAMESPACE::GeoImage']]],
-  ['image_1067',['Image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ac5545bfc8402fa871278bf2d56549ed4',1,'ROCKY_NAMESPACE::Image::Image(const Image &amp;rhs)'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a697b22b60ab730056a15a7ddb7d0f385',1,'ROCKY_NAMESPACE::Image::Image(Image &amp;&amp;rhs)']]],
+  ['image_1067',['Image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a697b22b60ab730056a15a7ddb7d0f385',1,'ROCKY_NAMESPACE::Image::Image(Image &amp;&amp;rhs)'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ab14d61117bea307514b6ea08fa1fbbe1',1,'ROCKY_NAMESPACE::Image::Image(PixelFormat format, unsigned s, unsigned t, unsigned r=1)'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ac5545bfc8402fa871278bf2d56549ed4',1,'ROCKY_NAMESPACE::Image::Image(const Image &amp;rhs)']]],
   ['indexoflayer_1068',['indexOfLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map.html#ac6b1359a56d099fcf0874de5891c289e',1,'ROCKY_NAMESPACE::Map']]],
   ['initialize_1069',['initialize',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_selection_info.html#a92026c2403cc633c7df2f3d93f9915ec',1,'ROCKY_NAMESPACE::SelectionInfo']]],
   ['insert_1070',['insert',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_create_tile_manifest.html#a1810c6ab5ea36be0cc73d7cb805e0087',1,'ROCKY_NAMESPACE::CreateTileManifest']]],
