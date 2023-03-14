@@ -93,30 +93,22 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a8ddc0af5a5b07c53b4c6d4872d15b39f">TerrainTileNode</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;key, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> *parent, vsg::ref_ptr&lt; vsg::Node &gt; geometry, const fvec2 &amp;morphConstants, float childrenVisibilityRange, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">SRS</a> &amp;worldSRS, const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_descriptors.html">TerrainTileDescriptors</a> &amp;initialDescriptors, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_host.html">TerrainTileHost</a> *in_host, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a> &amp;runtime)</td></tr>
 <tr class="memdesc:a8ddc0af5a5b07c53b4c6d4872d15b39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new tile node. <br /></td></tr>
 <tr class="separator:a8ddc0af5a5b07c53b4c6d4872d15b39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2902c5f5de8a2da301ef7b33fb394b3"><td class="memItemLeft" align="right" valign="top"><a id="ab2902c5f5de8a2da301ef7b33fb394b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#ab2902c5f5de8a2da301ef7b33fb394b3">refreshAllLayers</a> ()</td></tr>
-<tr class="memdesc:ab2902c5f5de8a2da301ef7b33fb394b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells this tile to load all its layers. <br /></td></tr>
-<tr class="separator:ab2902c5f5de8a2da301ef7b33fb394b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b62d1e7374cb2796d1b4785446ebb21"><td class="memItemLeft" align="right" valign="top"><a id="a1b62d1e7374cb2796d1b4785446ebb21"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a1b62d1e7374cb2796d1b4785446ebb21">refreshLayers</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_create_tile_manifest.html">CreateTileManifest</a> &amp;manifest)</td></tr>
-<tr class="memdesc:a1b62d1e7374cb2796d1b4785446ebb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells this tile to request data for the data in the manifest. <br /></td></tr>
-<tr class="separator:a1b62d1e7374cb2796d1b4785446ebb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafae1eb3d4782961b256c05ceabcae42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#aafae1eb3d4782961b256c05ceabcae42">notifyOfArrival</a> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> *that, shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_context.html">TerrainContext</a> &gt; terrain)</td></tr>
-<tr class="separator:aafae1eb3d4782961b256c05ceabcae42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a508f2d16ca63ac18cd92de97ae3aa995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a508f2d16ca63ac18cd92de97ae3aa995">setElevation</a> (shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt; image, const dmat4 &amp;matrix)</td></tr>
 <tr class="separator:a508f2d16ca63ac18cd92de97ae3aa995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c256e0b5b6122ce57463e26beb85165"><td class="memItemLeft" align="right" valign="top"><a id="a8c256e0b5b6122ce57463e26beb85165"></a>
-shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getElevationRaster</b> () const</td></tr>
+shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a8c256e0b5b6122ce57463e26beb85165">getElevationRaster</a> () const</td></tr>
+<tr class="memdesc:a8c256e0b5b6122ce57463e26beb85165"><td class="mdescLeft">&#160;</td><td class="mdescRight">This node's elevation raster image. <br /></td></tr>
 <tr class="separator:a8c256e0b5b6122ce57463e26beb85165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3152cf51a5b55ddddabbf413b5053004"><td class="memItemLeft" align="right" valign="top"><a id="a3152cf51a5b55ddddabbf413b5053004"></a>
-const dmat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getElevationMatrix</b> () const</td></tr>
+const dmat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a3152cf51a5b55ddddabbf413b5053004">getElevationMatrix</a> () const</td></tr>
+<tr class="memdesc:a3152cf51a5b55ddddabbf413b5053004"><td class="mdescLeft">&#160;</td><td class="mdescRight">This node's elevation matrix. <br /></td></tr>
 <tr class="separator:a3152cf51a5b55ddddabbf413b5053004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5783bdee24272dfd8eed05c0fb2c4fd9"><td class="memItemLeft" align="right" valign="top"><a id="a5783bdee24272dfd8eed05c0fb2c4fd9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a5783bdee24272dfd8eed05c0fb2c4fd9">update</a> (const vsg::FrameStamp *fs, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;io)</td></tr>
-<tr class="memdesc:a5783bdee24272dfd8eed05c0fb2c4fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply any thread-safe updates to the tile. <br /></td></tr>
-<tr class="separator:a5783bdee24272dfd8eed05c0fb2c4fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66e7d25aeb03051c6f5b1792a2020f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a66e7d25aeb03051c6f5b1792a2020f05">unloadChildren</a> ()</td></tr>
 <tr class="separator:a66e7d25aeb03051c6f5b1792a2020f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8b733021fc8cf1eb99cf27db3152bb"><td class="memItemLeft" align="right" valign="top"><a id="a6a8b733021fc8cf1eb99cf27db3152bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a6a8b733021fc8cf1eb99cf27db3152bb">update</a> (const vsg::FrameStamp *, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;)</td></tr>
+<tr class="memdesc:a6a8b733021fc8cf1eb99cf27db3152bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this node (placeholder) <br /></td></tr>
+<tr class="separator:a6a8b733021fc8cf1eb99cf27db3152bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d11294c78ee9926e1ac9cbb6e479d3"><td class="memItemLeft" align="right" valign="top"><a id="ae6d11294c78ee9926e1ac9cbb6e479d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#ae6d11294c78ee9926e1ac9cbb6e479d3">accept</a> (vsg::RecordTraversal &amp;visitor) const override</td></tr>
 <tr class="memdesc:ae6d11294c78ee9926e1ac9cbb6e479d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customized cull traversal. <br /></td></tr>
@@ -154,6 +146,12 @@ vsg::ref_ptr&lt; vsg::StateGroup &gt;&#160;</td><td class="memItemRight" valign=
 <tr class="memitem:a09e1677a5fa622171123b9c64eec97e2"><td class="memItemLeft" align="right" valign="top"><a id="a09e1677a5fa622171123b9c64eec97e2"></a>
 util::Future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>childrenLoader</b></td></tr>
 <tr class="separator:a09e1677a5fa622171123b9c64eec97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01938f34103c81a1297dd4c5d8a9e2e7"><td class="memItemLeft" align="right" valign="top"><a id="a01938f34103c81a1297dd4c5d8a9e2e7"></a>
+util::Future&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_model.html">TerrainTileModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>elevationLoader</b></td></tr>
+<tr class="separator:a01938f34103c81a1297dd4c5d8a9e2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a92d1428e4ba767073c93d1e1405454"><td class="memItemLeft" align="right" valign="top"><a id="a4a92d1428e4ba767073c93d1e1405454"></a>
+util::Future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>elevationMerger</b></td></tr>
+<tr class="separator:a4a92d1428e4ba767073c93d1e1405454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97a7628b312d2fdc9bdc987e442ad932"><td class="memItemLeft" align="right" valign="top"><a id="a97a7628b312d2fdc9bdc987e442ad932"></a>
 util::Future&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_model.html">TerrainTileModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dataLoader</b></td></tr>
 <tr class="separator:a97a7628b312d2fdc9bdc987e442ad932"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,9 +173,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac87a4c12a70b1fab5282606b0b901455"><td class="memItemLeft" align="right" valign="top"><a id="ac87a4c12a70b1fab5282606b0b901455"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>inheritFrom</b> (vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> &gt; parent)</td></tr>
 <tr class="separator:ac87a4c12a70b1fab5282606b0b901455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af562cfc7cbcc9636620940c4b1c7eb48"><td class="memItemLeft" align="right" valign="top"><a id="af562cfc7cbcc9636620940c4b1c7eb48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateElevationRaster</b> ()</td></tr>
-<tr class="separator:af562cfc7cbcc9636620940c4b1c7eb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -190,15 +185,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_needsUpdate</b></td>
 <tr class="memitem:ac3903b49f83be108bc4e3fa81ccf3a8c"><td class="memItemLeft" align="right" valign="top"><a id="ac3903b49f83be108bc4e3fa81ccf3a8c"></a>
 <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_host.html">TerrainTileHost</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_host</b></td></tr>
 <tr class="separator:ac3903b49f83be108bc4e3fa81ccf3a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9057bca062a37eb227c39f8a401276f7"><td class="memItemLeft" align="right" valign="top"><a id="a9057bca062a37eb227c39f8a401276f7"></a>
-vsg::observer_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_eastNeighbor</b></td></tr>
-<tr class="separator:a9057bca062a37eb227c39f8a401276f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3295476d5e96281aec887103cb626807"><td class="memItemLeft" align="right" valign="top"><a id="a3295476d5e96281aec887103cb626807"></a>
-vsg::observer_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_southNeighbor</b></td></tr>
-<tr class="separator:a3295476d5e96281aec887103cb626807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ca2a30487112a0c6c51dcecc39a3dd2"><td class="memItemLeft" align="right" valign="top"><a id="a5ca2a30487112a0c6c51dcecc39a3dd2"></a>
-fvec4&#160;</td><td class="memItemRight" valign="bottom"><b>_tileKeyValue</b></td></tr>
-<tr class="separator:a5ca2a30487112a0c6c51dcecc39a3dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -209,35 +195,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TileNodeRegistry</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TileNode represents a single tile. TileNode has 5 children: one <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_surface_node.html">SurfaceNode</a> that renders the actual tile content under a MatrixTransform; and four TileNodes representing the LOD+1 quadtree tiles under this tile. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aafae1eb3d4782961b256c05ceabcae42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafae1eb3d4782961b256c05ceabcae42">&#9670;&nbsp;</a></span>notifyOfArrival()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ROCKY_NAMESPACE::TerrainTileNode::notifyOfArrival </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> *&#160;</td>
-          <td class="paramname"><em>that</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_context.html">TerrainContext</a> &gt;&#160;</td>
-          <td class="paramname"><em>terrain</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Notifies this tile that another tile has come into existence. </p>
-
-</div>
-</div>
 <a id="a508f2d16ca63ac18cd92de97ae3aa995"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a508f2d16ca63ac18cd92de97ae3aa995">&#9670;&nbsp;</a></span>setElevation()</h2>
 
