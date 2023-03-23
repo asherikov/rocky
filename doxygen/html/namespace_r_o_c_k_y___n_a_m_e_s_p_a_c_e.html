@@ -89,8 +89,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_config_options.html">ConfigOptions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_driver_config_options.html">DriverConfigOptions</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_date_time.html">DateTime</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_date_time_extent.html">DateTimeExtent</a></td></tr>
@@ -163,6 +161,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">Sphere</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_elevation_layer.html">MBTilesElevationLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_image_layer.html">MBTilesImageLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1optional.html">optional</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,9 +309,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html#a125f63f016555490e8058e1e10ca8bbb">ReadImageURIService</a> = std::function&lt; <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_result.html">Result</a>&lt; shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt; &gt;(const std::string &amp;location, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;)&gt;</td></tr>
 <tr class="memdesc:a125f63f016555490e8058e1e10ca8bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service for reading an image from a URL. <br /></td></tr>
 <tr class="separator:a125f63f016555490e8058e1e10ca8bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a611c2ff16a9a9ccfd5ee0927d33b2103"><td class="memItemLeft" align="right" valign="top"><a id="a611c2ff16a9a9ccfd5ee0927d33b2103"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ReadImageStreamService</b> = std::function&lt; <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_result.html">Result</a>&lt; shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt; &gt;(std::istream &amp;stream, const std::string &amp;contentType, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;io)&gt;</td></tr>
-<tr class="separator:a611c2ff16a9a9ccfd5ee0927d33b2103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1c609b56d8bfa28f43dfa3fbb9014d"><td class="memItemLeft" align="right" valign="top"><a id="a6b1c609b56d8bfa28f43dfa3fbb9014d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ReadImageStreamService</b> = std::function&lt; <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_result.html">Result</a>&lt; shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt; &gt;(std::istream &amp;stream, std::string contentType, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;io)&gt;</td></tr>
+<tr class="separator:a6b1c609b56d8bfa28f43dfa3fbb9014d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b675f9829c42c647f3d531ac81b31eb"><td class="memItemLeft" align="right" valign="top"><a id="a1b675f9829c42c647f3d531ac81b31eb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>WriteImageStreamService</b> = std::function&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">Status</a>(shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt; image, std::ostream &amp;stream, std::string contentType, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;io)&gt;</td></tr>
+<tr class="separator:a1b675f9829c42c647f3d531ac81b31eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678eeba20b9133d4d53560f0a48d8162"><td class="memItemLeft" align="right" valign="top"><a id="a678eeba20b9133d4d53560f0a48d8162"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html#a678eeba20b9133d4d53560f0a48d8162">CacheImpl</a> = void *</td></tr>
 <tr class="memdesc:a678eeba20b9133d4d53560f0a48d8162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service for caching data. <br /></td></tr>

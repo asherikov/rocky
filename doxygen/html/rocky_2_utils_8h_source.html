@@ -468,7 +468,23 @@ $(function() {
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            }</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        }</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    };</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;} }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keyword">class </span>StreamCompressor</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> compress(<span class="keyword">const</span> std::string&amp; src, std::ostream&amp; out) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> decompress(std::istream&amp; in, std::string&amp; out) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    };</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT ZLibCompressor : <span class="keyword">public</span> StreamCompressor</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    {</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordtype">bool</span> compress(<span class="keyword">const</span> std::string&amp; src, std::ostream&amp; out) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="keywordtype">bool</span> decompress(std::istream&amp; in, std::string&amp; out) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    };</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;} }</div>
 <div class="ttc" id="anamespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></div><div class="ttdef"><b>Definition:</b> Callbacks.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

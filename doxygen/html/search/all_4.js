@@ -21,7 +21,6 @@ var searchData=
   ['disable_130',['disable',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_layer.html#a986e04bdd12a70b2e8468620a195b044',1,'ROCKY_NAMESPACE::TileLayer']]],
   ['distance_131',['Distance',['../struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_distance.html',1,'ROCKY_NAMESPACE']]],
   ['distanceto_132',['distanceTo',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html#a93defa30756777ba7c884377bbc66165',1,'ROCKY_NAMESPACE::GeoPoint']]],
-  ['driver_133',['Driver',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_1_1_driver.html#aefa7ec779d44500954aaf59125847396',1,'ROCKY_NAMESPACE::GDAL::Driver::Driver()'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_1_1_driver.html',1,'ROCKY_NAMESPACE::GDAL::Driver'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_1_1_driver.html',1,'ROCKY_NAMESPACE::TMS::Driver']]],
-  ['driverconfigoptions_134',['DriverConfigOptions',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_driver_config_options.html',1,'ROCKY_NAMESPACE']]],
-  ['duration_135',['Duration',['../struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_duration.html',1,'ROCKY_NAMESPACE']]]
+  ['driver_133',['Driver',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_1_1_driver.html#aefa7ec779d44500954aaf59125847396',1,'ROCKY_NAMESPACE::GDAL::Driver::Driver()'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_1_1_driver.html',1,'ROCKY_NAMESPACE::GDAL::Driver'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_1_1_driver.html',1,'ROCKY_NAMESPACE::MBTiles::Driver'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_1_1_driver.html',1,'ROCKY_NAMESPACE::TMS::Driver']]],
+  ['duration_134',['Duration',['../struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_duration.html',1,'ROCKY_NAMESPACE']]]
 ];
