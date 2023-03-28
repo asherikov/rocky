@@ -71,7 +71,6 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -160,6 +159,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memdesc:a1b1ba4804451dfe6cc357194e42762ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a1b1ba4804451dfe6cc357194e42762ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498141ed12d0093889cf4bc38fdbddc5"><td class="memItemLeft" align="right" valign="top">UID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a498141ed12d0093889cf4bc38fdbddc5">uid</a> () const</td></tr>
+<tr class="memdesc:a498141ed12d0093889cf4bc38fdbddc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to create a layer from a serialization string.  <a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a498141ed12d0093889cf4bc38fdbddc5">More...</a><br /></td></tr>
 <tr class="separator:a498141ed12d0093889cf4bc38fdbddc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f1de4d409255607fed7edfa80e973a"><td class="memItemLeft" align="right" valign="top"><a id="a65f1de4d409255607fed7edfa80e973a"></a>
 const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">Status</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a65f1de4d409255607fed7edfa80e973a">status</a> () const</td></tr>
@@ -181,10 +181,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a4d2c2c0de34053d47bc48624c7e5ae45">isOpen</a> () const</td></tr>
 <tr class="memdesc:a4d2c2c0de34053d47bc48624c7e5ae45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the layer is open. <br /></td></tr>
 <tr class="separator:a4d2c2c0de34053d47bc48624c7e5ae45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeced17ec789910e9c68b051670c14012"><td class="memItemLeft" align="right" valign="top"><a id="aeced17ec789910e9c68b051670c14012"></a>
-virtual <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_config.html">Config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#aeced17ec789910e9c68b051670c14012">getConfig</a> () const</td></tr>
-<tr class="memdesc:aeced17ec789910e9c68b051670c14012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this layer into a <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_config.html">Config</a> object (if applicable) <br /></td></tr>
-<tr class="separator:aeced17ec789910e9c68b051670c14012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe336a155275fa8d8c1d48030cbdf9ae"><td class="memItemLeft" align="right" valign="top"><a id="afe336a155275fa8d8c1d48030cbdf9ae"></a>
+virtual JSON&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#afe336a155275fa8d8c1d48030cbdf9ae">to_json</a> () const</td></tr>
+<tr class="memdesc:afe336a155275fa8d8c1d48030cbdf9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this layer into a Config object (if applicable) <br /></td></tr>
+<tr class="separator:afe336a155275fa8d8c1d48030cbdf9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed517a68317b7714713e394479141ae6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#aed517a68317b7714713e394479141ae6">setOpenAutomatically</a> (bool value)</td></tr>
 <tr class="separator:aed517a68317b7714713e394479141ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5274e94708f6e51cf0ac8fe69c6b90c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#aa5274e94708f6e51cf0ac8fe69c6b90c">getOpenAutomatically</a> () const</td></tr>
@@ -259,29 +259,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const st
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const</td></tr>
 <tr class="separator:a9517b12fbc40a160694b50428ab381d0 inherit pub_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a332f727a5d141aacd49c182cdb96b1e1"><td class="memItemLeft" align="right" valign="top"><a id="a332f727a5d141aacd49c182cdb96b1e1"></a>
-static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a332f727a5d141aacd49c182cdb96b1e1">materialize</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_config_options.html">ConfigOptions</a> &amp;)</td></tr>
-<tr class="memdesc:a332f727a5d141aacd49c182cdb96b1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to create a layer from a serialization string. <br /></td></tr>
-<tr class="separator:a332f727a5d141aacd49c182cdb96b1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit.html">ROCKY_NAMESPACE::Inherit&lt; Object, Layer &gt;</a></td></tr>
-<tr class="memitem:aad07024a773709afec64dffbaf864ac6 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="aad07024a773709afec64dffbaf864ac6"></a>
-static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:aad07024a773709afec64dffbaf864ac6 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985f10dafaaf9db4b627824b6aca472c inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a985f10dafaaf9db4b627824b6aca472c"></a>
-static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (shared_ptr&lt; T &gt; &amp;rhs)</td></tr>
-<tr class="separator:a985f10dafaaf9db4b627824b6aca472c inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4686788419a7fea319c322882ffed10f inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a4686788419a7fea319c322882ffed10f"></a>
-static shared_ptr&lt; const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (shared_ptr&lt; const T &gt; &amp;rhs)</td></tr>
-<tr class="separator:a4686788419a7fea319c322882ffed10f inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41adf827c1ff64d0d6c91e312dd49db5 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a41adf827c1ff64d0d6c91e312dd49db5"></a>
-static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (const shared_ptr&lt; T &gt; &amp;rhs)</td></tr>
-<tr class="separator:a41adf827c1ff64d0d6c91e312dd49db5 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7376bea9575a564d24f11e0d98f1f9 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a4a7376bea9575a564d24f11e0d98f1f9"></a>
-static const shared_ptr&lt; const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (const shared_ptr&lt; const T &gt; &amp;rhs)</td></tr>
-<tr class="separator:a4a7376bea9575a564d24f11e0d98f1f9 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac72fa960f3b0682f897586aa85d0b127"><td class="memItemLeft" align="right" valign="top"><a id="ac72fa960f3b0682f897586aa85d0b127"></a>
@@ -293,9 +270,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a982f2455e73d9e9a209f807573abe56a"><td class="memItemLeft" align="right" valign="top"><a id="a982f2455e73d9e9a209f807573abe56a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_config.html">Config</a> &amp;conf)</td></tr>
-<tr class="separator:a982f2455e73d9e9a209f807573abe56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca8097abc016b0728e2a5750f31de2a"><td class="memItemLeft" align="right" valign="top"><a id="aaca8097abc016b0728e2a5750f31de2a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const JSON &amp;conf)</td></tr>
+<tr class="separator:aaca8097abc016b0728e2a5750f31de2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0261d55c01716e446dd446731dbd83a2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a0261d55c01716e446dd446731dbd83a2">openImplementation</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;io)</td></tr>
 <tr class="separator:a0261d55c01716e446dd446731dbd83a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d41d147a1f92eeeac99e51a81a8e6d4"><td class="memItemLeft" align="right" valign="top"><a id="a0d41d147a1f92eeeac99e51a81a8e6d4"></a>
@@ -354,6 +331,25 @@ Friends</h2></td></tr>
 <tr class="memitem:ad2f32e921244459f7cc6d50355429cc6"><td class="memItemLeft" align="right" valign="top"><a id="ad2f32e921244459f7cc6d50355429cc6"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b></td></tr>
 <tr class="separator:ad2f32e921244459f7cc6d50355429cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit.html">ROCKY_NAMESPACE::Inherit&lt; Object, Layer &gt;</a></td></tr>
+<tr class="memitem:aad07024a773709afec64dffbaf864ac6 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="aad07024a773709afec64dffbaf864ac6"></a>
+static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:aad07024a773709afec64dffbaf864ac6 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985f10dafaaf9db4b627824b6aca472c inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a985f10dafaaf9db4b627824b6aca472c"></a>
+static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (shared_ptr&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="separator:a985f10dafaaf9db4b627824b6aca472c inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4686788419a7fea319c322882ffed10f inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a4686788419a7fea319c322882ffed10f"></a>
+static shared_ptr&lt; const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (shared_ptr&lt; const T &gt; &amp;rhs)</td></tr>
+<tr class="separator:a4686788419a7fea319c322882ffed10f inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41adf827c1ff64d0d6c91e312dd49db5 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a41adf827c1ff64d0d6c91e312dd49db5"></a>
+static shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (const shared_ptr&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="separator:a41adf827c1ff64d0d6c91e312dd49db5 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7376bea9575a564d24f11e0d98f1f9 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memItemLeft" align="right" valign="top"><a id="a4a7376bea9575a564d24f11e0d98f1f9"></a>
+static const shared_ptr&lt; const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html">Layer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cast</b> (const shared_ptr&lt; const T &gt; &amp;rhs)</td></tr>
+<tr class="separator:a4a7376bea9575a564d24f11e0d98f1f9 inherit pub_static_methods_class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map.html">Map</a> layers.</p>
@@ -520,7 +516,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b></td></tr>
 </div><div class="memdoc">
 <p>Called by <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a1a158654e87f164eb8ae03e982f7f47d" title="Open a layer.">open()</a> to connect to external resources and return a status. MAKE SURE you call superclass <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a0261d55c01716e446dd446731dbd83a2">openImplementation()</a> if you override this! This is where you will connect to back-end data sources if appropriate. When added to a map, init() is called before <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a1a158654e87f164eb8ae03e982f7f47d" title="Open a layer.">open()</a> and addedToMap() is called after <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a1a158654e87f164eb8ae03e982f7f47d" title="Open a layer.">open()</a> if it succeeds. By default, returns STATUS_OK. </p>
 
-<p>Reimplemented in <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_image_layer.html#a97af4cf779d598d295a84b4f27e9008b">ROCKY_NAMESPACE::TMSImageLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_elevation_layer.html#abeacc5519968b7fe39181c6d74c5e0cf">ROCKY_NAMESPACE::TMSElevationLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_image_layer.html#ab74c1c0f264fca7d48d31553013ca0a3">ROCKY_NAMESPACE::MBTilesImageLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_elevation_layer.html#ac9a3392136c07a4a1c857afebffee03a">ROCKY_NAMESPACE::MBTilesElevationLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image_layer.html#a410ca80ca009dba0ea6d3255034b328c">ROCKY_NAMESPACE::ImageLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_visible_layer.html#a4bc5a2f27a80fea86f4b907058380ba4">ROCKY_NAMESPACE::VisibleLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_layer.html#a1879af6ab051777ad86a078ba7e9ea90">ROCKY_NAMESPACE::TileLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_image_layer.html#a98ac7c3390edbe59dc2e5e1e0064cb77">ROCKY_NAMESPACE::GDALImageLayer</a>, and <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_elevation_layer.html#ad7a84e10d294d2077d2eea14460112f2">ROCKY_NAMESPACE::GDALElevationLayer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_image_layer.html#a97af4cf779d598d295a84b4f27e9008b">ROCKY_NAMESPACE::TMSImageLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_elevation_layer.html#abeacc5519968b7fe39181c6d74c5e0cf">ROCKY_NAMESPACE::TMSElevationLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_image_layer.html#ab74c1c0f264fca7d48d31553013ca0a3">ROCKY_NAMESPACE::MBTilesImageLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_elevation_layer.html#ac9a3392136c07a4a1c857afebffee03a">ROCKY_NAMESPACE::MBTilesElevationLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_layer.html#a1879af6ab051777ad86a078ba7e9ea90">ROCKY_NAMESPACE::TileLayer</a>, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_image_layer.html#a98ac7c3390edbe59dc2e5e1e0064cb77">ROCKY_NAMESPACE::GDALImageLayer</a>, and <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_elevation_layer.html#ad7a84e10d294d2077d2eea14460112f2">ROCKY_NAMESPACE::GDALElevationLayer</a>.</p>
 
 </div>
 </div>
@@ -601,6 +597,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Attempt to create a layer from a serialization string. </p>
 <p>This layer's unique ID. This value is generated automatically at runtime and is not guaranteed to be the same from one run to the next. </p>
 
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readimageuriservice_1400',['ReadImageURIService',['../namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html#a125f63f016555490e8058e1e10ca8bbb',1,'ROCKY_NAMESPACE']]]
+  ['objectfactory_1334',['ObjectFactory',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_instance.html#a776daf857fecae614113f8bb8acad4d9',1,'ROCKY_NAMESPACE::Instance']]]
 ];
