@@ -108,12 +108,18 @@ const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">SR
 <tr class="memitem:a679cf85daa813a82b108307dc8587f3d"><td class="memTemplParams" colspan="2">template&lt;typename ITERATOR &gt; </td></tr>
 <tr class="memitem:a679cf85daa813a82b108307dc8587f3d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html#a679cf85daa813a82b108307dc8587f3d">transformRange</a> (ITERATOR begin, ITERATOR end) const</td></tr>
 <tr class="separator:a679cf85daa813a82b108307dc8587f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa52651cb1fc386d136915ccd42e0ba"><td class="memTemplParams" colspan="2">template&lt;typename DVEC3 &gt; </td></tr>
+<tr class="memitem:adfa52651cb1fc386d136915ccd42e0ba"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html#adfa52651cb1fc386d136915ccd42e0ba">transformArray</a> (DVEC3 *inout, std::size_t count) const</td></tr>
+<tr class="separator:adfa52651cb1fc386d136915ccd42e0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64027d127e396adff760ec74b4429053"><td class="memTemplParams" colspan="2">template&lt;typename DVEC3A , typename DVEC3B &gt; </td></tr>
 <tr class="memitem:a64027d127e396adff760ec74b4429053"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html#a64027d127e396adff760ec74b4429053">inverse</a> (const DVEC3A &amp;in, DVEC3B &amp;out) const</td></tr>
 <tr class="separator:a64027d127e396adff760ec74b4429053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e764a46b49f9f986c479af7c39b1b41"><td class="memTemplParams" colspan="2">template&lt;typename ITERATOR &gt; </td></tr>
 <tr class="memitem:a4e764a46b49f9f986c479af7c39b1b41"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html#a4e764a46b49f9f986c479af7c39b1b41">inverseRange</a> (ITERATOR begin, ITERATOR end) const</td></tr>
 <tr class="separator:a4e764a46b49f9f986c479af7c39b1b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b94c13ce1d7c51c9b1645aecc9ca844"><td class="memTemplParams" colspan="2">template&lt;typename DVEC3 &gt; </td></tr>
+<tr class="memitem:a0b94c13ce1d7c51c9b1645aecc9ca844"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html#a0b94c13ce1d7c51c9b1645aecc9ca844">inverseArray</a> (DVEC3 *inout, std::size_t count) const</td></tr>
+<tr class="separator:a0b94c13ce1d7c51c9b1645aecc9ca844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2345777e6a01a1ce3645e2d96ab0584"><td class="memItemLeft" align="right" valign="top"><a id="ae2345777e6a01a1ce3645e2d96ab0584"></a>
 const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html#ae2345777e6a01a1ce3645e2d96ab0584">lastError</a> () const</td></tr>
 <tr class="memdesc:ae2345777e6a01a1ce3645e2d96ab0584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message if something returns false. <br /></td></tr>
@@ -179,6 +185,45 @@ template&lt;typename DVEC3A , typename DVEC3B &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Inverse-transform a 3-vector </p><dl class="section return"><dt>Returns</dt><dd>True is the transformation succeeded </dd></dl>
+
+</div>
+</div>
+<a id="a0b94c13ce1d7c51c9b1645aecc9ca844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b94c13ce1d7c51c9b1645aecc9ca844">&#9670;&nbsp;</a></span>inverseArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DVEC3 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ROCKY_NAMESPACE::SRSOperation::inverseArray </td>
+          <td>(</td>
+          <td class="paramtype">DVEC3 *&#160;</td>
+          <td class="paramname"><em>inout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Inverse-transform an array of 3-vectors in place </p><dl class="section return"><dt>Returns</dt><dd>True if all transformations succeeded </dd></dl>
 
 </div>
 </div>
@@ -314,6 +359,45 @@ template&lt;typename DVEC3A , typename DVEC3B &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Transform a 3-vector </p><dl class="section return"><dt>Returns</dt><dd>True is the transformation succeeded </dd></dl>
+
+</div>
+</div>
+<a id="adfa52651cb1fc386d136915ccd42e0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa52651cb1fc386d136915ccd42e0ba">&#9670;&nbsp;</a></span>transformArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DVEC3 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ROCKY_NAMESPACE::SRSOperation::transformArray </td>
+          <td>(</td>
+          <td class="paramtype">DVEC3 *&#160;</td>
+          <td class="paramname"><em>inout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Transform an array of 3-vectors in place </p><dl class="section return"><dt>Returns</dt><dd>True if all transformations succeeded </dd></dl>
 
 </div>
 </div>

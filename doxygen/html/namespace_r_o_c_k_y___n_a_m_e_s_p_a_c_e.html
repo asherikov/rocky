@@ -132,6 +132,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_interface.html">DataInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service for accessing other data.  <a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_content.html">Content</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_services.html">Services</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a></td></tr>
@@ -318,6 +320,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>CacheService</b> = s
 <tr class="memitem:a633e65eb06cbe48ee36712950f21d4f4"><td class="memItemLeft" align="right" valign="top"><a id="a633e65eb06cbe48ee36712950f21d4f4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>DataService</b> = std::function&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_interface.html">DataInterface</a> &amp;()&gt;</td></tr>
 <tr class="separator:a633e65eb06cbe48ee36712950f21d4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65dba9a47d04dfefec03b19818924292"><td class="memItemLeft" align="right" valign="top"><a id="a65dba9a47d04dfefec03b19818924292"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ContentCache</b> = util::LRUCache&lt; std::string, <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_result.html">Result</a>&lt; <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_content.html">Content</a> &gt; &gt;</td></tr>
+<tr class="separator:a65dba9a47d04dfefec03b19818924292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53068a23cb1e405d3fe9548c9e4173b1"><td class="memItemLeft" align="right" valign="top"><a id="a53068a23cb1e405d3fe9548c9e4173b1"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>Headers</b> = std::unordered_map&lt; std::string, std::string &gt;</td></tr>
 <tr class="separator:a53068a23cb1e405d3fe9548c9e4173b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -440,10 +445,10 @@ template&lt;class T &gt; </td></tr>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:adbcacbb490e95bb852b51caa7c45f786"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set</b> (json &amp;obj, const T &amp;var)</td></tr>
 <tr class="separator:adbcacbb490e95bb852b51caa7c45f786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11aa82ca479238c15a123606e6d29cc"><td class="memTemplParams" colspan="2"><a id="aa11aa82ca479238c15a123606e6d29cc"></a>
+<tr class="memitem:a38d5e2fb00244e89015aa89023a8ff07"><td class="memTemplParams" colspan="2"><a id="a38d5e2fb00244e89015aa89023a8ff07"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa11aa82ca479238c15a123606e6d29cc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_to</b> (const json &amp;obj, const char *name, T &amp;var)</td></tr>
-<tr class="separator:aa11aa82ca479238c15a123606e6d29cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d5e2fb00244e89015aa89023a8ff07"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_to</b> (const json &amp;obj, const char *name, T &amp;var)</td></tr>
+<tr class="separator:a38d5e2fb00244e89015aa89023a8ff07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a578a25a6ddc5833baea08b47d23f2ff4"><td class="memTemplParams" colspan="2"><a id="a578a25a6ddc5833baea08b47d23f2ff4"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a578a25a6ddc5833baea08b47d23f2ff4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_to</b> (const json &amp;obj, T &amp;var)</td></tr>
