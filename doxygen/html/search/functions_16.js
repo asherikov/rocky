@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['_7edataextent_1255',['~DataExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_extent.html#a4ed19ebaa26a221e39c826cb32371937',1,'ROCKY_NAMESPACE::DataExtent']]],
-  ['_7eellipsoid_1256',['~Ellipsoid',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_ellipsoid.html#af8c89a1e19470c4e14e923240371a7a3',1,'ROCKY_NAMESPACE::Ellipsoid']]],
-  ['_7egeoextent_1257',['~GeoExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_extent.html#a79d211369cf4143018a6425e2023a415',1,'ROCKY_NAMESPACE::GeoExtent']]],
-  ['_7egeoimage_1258',['~GeoImage',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html#af564882597a72ad5e91a0af16e8071ab',1,'ROCKY_NAMESPACE::GeoImage']]],
-  ['_7egeopoint_1259',['~GeoPoint',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html#a532c8cb2ebb1bd05504538b4a286bc0a',1,'ROCKY_NAMESPACE::GeoPoint']]],
-  ['_7eimage_1260',['~Image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a0294f63700543e11c0f0da85601c7ae5',1,'ROCKY_NAMESPACE::Image']]],
-  ['_7elayer_1261',['~Layer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a1b1ba4804451dfe6cc357194e42762ae',1,'ROCKY_NAMESPACE::Layer']]],
-  ['_7esettings_1262',['~Settings',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a7f67d219dccdee5612c29b85127fdbb6',1,'ROCKY_NAMESPACE::MapManipulator::Settings']]],
-  ['_7etilelayer_1263',['~TileLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_layer.html#a267be4c8ba19456eee5f7878272a2a48',1,'ROCKY_NAMESPACE::TileLayer']]],
-  ['_7etmselevationlayer_1264',['~TMSElevationLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_elevation_layer.html#ae634f833902fe386a05ca3aadb84dfcc',1,'ROCKY_NAMESPACE::TMSElevationLayer']]],
-  ['_7etmsimagelayer_1265',['~TMSImageLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_image_layer.html#adab9a7157c0a7357e1b890b16f8d27c5',1,'ROCKY_NAMESPACE::TMSImageLayer']]],
-  ['_7euricontext_1266',['~URIContext',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_u_r_i_context.html#aed48908aecf5075b8e8f75ee96212c3b',1,'ROCKY_NAMESPACE::URIContext']]]
+  ['_7edataextent_1266',['~DataExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_extent.html#a4ed19ebaa26a221e39c826cb32371937',1,'ROCKY_NAMESPACE::DataExtent']]],
+  ['_7eellipsoid_1267',['~Ellipsoid',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_ellipsoid.html#af8c89a1e19470c4e14e923240371a7a3',1,'ROCKY_NAMESPACE::Ellipsoid']]],
+  ['_7egeoextent_1268',['~GeoExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_extent.html#a79d211369cf4143018a6425e2023a415',1,'ROCKY_NAMESPACE::GeoExtent']]],
+  ['_7egeoimage_1269',['~GeoImage',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html#af564882597a72ad5e91a0af16e8071ab',1,'ROCKY_NAMESPACE::GeoImage']]],
+  ['_7egeopoint_1270',['~GeoPoint',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html#a532c8cb2ebb1bd05504538b4a286bc0a',1,'ROCKY_NAMESPACE::GeoPoint']]],
+  ['_7eimage_1271',['~Image',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a0294f63700543e11c0f0da85601c7ae5',1,'ROCKY_NAMESPACE::Image']]],
+  ['_7elayer_1272',['~Layer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#a1b1ba4804451dfe6cc357194e42762ae',1,'ROCKY_NAMESPACE::Layer']]],
+  ['_7esettings_1273',['~Settings',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a7f67d219dccdee5612c29b85127fdbb6',1,'ROCKY_NAMESPACE::MapManipulator::Settings']]],
+  ['_7etilelayer_1274',['~TileLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_layer.html#a267be4c8ba19456eee5f7878272a2a48',1,'ROCKY_NAMESPACE::TileLayer']]],
+  ['_7etmselevationlayer_1275',['~TMSElevationLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_elevation_layer.html#ae634f833902fe386a05ca3aadb84dfcc',1,'ROCKY_NAMESPACE::TMSElevationLayer']]],
+  ['_7etmsimagelayer_1276',['~TMSImageLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_image_layer.html#adab9a7157c0a7357e1b890b16f8d27c5',1,'ROCKY_NAMESPACE::TMSImageLayer']]],
+  ['_7euricontext_1277',['~URIContext',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_u_r_i_context.html#aed48908aecf5075b8e8f75ee96212c3b',1,'ROCKY_NAMESPACE::URIContext']]]
 ];
