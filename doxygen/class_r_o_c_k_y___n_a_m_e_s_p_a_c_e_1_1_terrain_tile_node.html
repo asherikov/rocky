@@ -72,7 +72,6 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ROCKY_NAMESPACE::TerrainTileNode Class Reference</div>  </div>
@@ -80,17 +79,13 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_terrain_tile_node_8h_source.html">TerrainTileNode.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ROCKY_NAMESPACE::TerrainTileNode:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.png" alt=""/>
- </div></div>
+
+<p>Inherits vsg::Inherit&lt; vsg::CullGroup, TerrainTileNode &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ddc0af5a5b07c53b4c6d4872d15b39f"><td class="memItemLeft" align="right" valign="top"><a id="a8ddc0af5a5b07c53b4c6d4872d15b39f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a8ddc0af5a5b07c53b4c6d4872d15b39f">TerrainTileNode</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;key, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> *parent, vsg::ref_ptr&lt; vsg::Node &gt; geometry, const fvec2 &amp;morphConstants, float childrenVisibilityRange, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">SRS</a> &amp;worldSRS, const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_descriptors.html">TerrainTileDescriptors</a> &amp;initialDescriptors, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_host.html">TerrainTileHost</a> *in_host, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a> &amp;runtime)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a8ddc0af5a5b07c53b4c6d4872d15b39f">TerrainTileNode</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;key, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html">TerrainTileNode</a> *parent, vsg::ref_ptr&lt; vsg::Node &gt; geometry, const fvec2 &amp;morphConstants, float childrenVisibilityRange, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">SRS</a> &amp;worldSRS, const TerrainTileDescriptors &amp;initialDescriptors, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_host.html">TerrainTileHost</a> *in_host, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a> &amp;runtime)</td></tr>
 <tr class="memdesc:a8ddc0af5a5b07c53b4c6d4872d15b39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new tile node. <br /></td></tr>
 <tr class="separator:a8ddc0af5a5b07c53b4c6d4872d15b39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a508f2d16ca63ac18cd92de97ae3aa995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a508f2d16ca63ac18cd92de97ae3aa995">setElevation</a> (shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">Image</a> &gt; image, const dmat4 &amp;matrix)</td></tr>
@@ -106,7 +101,7 @@ const dmat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="memitem:a66e7d25aeb03051c6f5b1792a2020f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a66e7d25aeb03051c6f5b1792a2020f05">unloadChildren</a> ()</td></tr>
 <tr class="separator:a66e7d25aeb03051c6f5b1792a2020f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8b733021fc8cf1eb99cf27db3152bb"><td class="memItemLeft" align="right" valign="top"><a id="a6a8b733021fc8cf1eb99cf27db3152bb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a6a8b733021fc8cf1eb99cf27db3152bb">update</a> (const vsg::FrameStamp *, const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_i_o_options.html">IOOptions</a> &amp;)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_node.html#a6a8b733021fc8cf1eb99cf27db3152bb">update</a> (const vsg::FrameStamp *, const IOOptions &amp;)</td></tr>
 <tr class="memdesc:a6a8b733021fc8cf1eb99cf27db3152bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this node (placeholder) <br /></td></tr>
 <tr class="separator:a6a8b733021fc8cf1eb99cf27db3152bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d11294c78ee9926e1ac9cbb6e479d3"><td class="memItemLeft" align="right" valign="top"><a id="ae6d11294c78ee9926e1ac9cbb6e479d3"></a>
@@ -123,7 +118,7 @@ Public Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>doNotExpire</b></td></tr>
 <tr class="separator:a6add013b7ff7c98855ac86097697f33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318ef309e808ec13668a60501c37cd1b"><td class="memItemLeft" align="right" valign="top"><a id="a318ef309e808ec13668a60501c37cd1b"></a>
-Revision&#160;</td><td class="memItemRight" valign="bottom"><b>revision</b></td></tr>
+<a class="el" href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html#af01f4eb53e72c4be729979cd946c295d">Revision</a>&#160;</td><td class="memItemRight" valign="bottom"><b>revision</b></td></tr>
 <tr class="separator:a318ef309e808ec13668a60501c37cd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a345d2b24265710bca2a482e40f9b897e"><td class="memItemLeft" align="right" valign="top"><a id="a345d2b24265710bca2a482e40f9b897e"></a>
 fvec2&#160;</td><td class="memItemRight" valign="bottom"><b>morphConstants</b></td></tr>
@@ -135,7 +130,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>childrenVisibilityRa
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>numLODs</b></td></tr>
 <tr class="separator:aaa34a25ec69f3eb769458e0bf6e54995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06e792f122b10e4ac7228169f65e096"><td class="memItemLeft" align="right" valign="top"><a id="aa06e792f122b10e4ac7228169f65e096"></a>
-<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_render_model.html">TerrainTileRenderModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderModel</b></td></tr>
+TerrainTileRenderModel&#160;</td><td class="memItemRight" valign="bottom"><b>renderModel</b></td></tr>
 <tr class="separator:aa06e792f122b10e4ac7228169f65e096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae84024b7d5556ae95864ddd2b2490dac"><td class="memItemLeft" align="right" valign="top"><a id="ae84024b7d5556ae95864ddd2b2490dac"></a>
 vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_surface_node.html">SurfaceNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>surface</b></td></tr>
@@ -185,12 +180,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_needsUpdate</b></td>
 <tr class="memitem:ac3903b49f83be108bc4e3fa81ccf3a8c"><td class="memItemLeft" align="right" valign="top"><a id="ac3903b49f83be108bc4e3fa81ccf3a8c"></a>
 <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_tile_host.html">TerrainTileHost</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_host</b></td></tr>
 <tr class="separator:ac3903b49f83be108bc4e3fa81ccf3a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a6026c7b700c169adf8a647ff05760621"><td class="memItemLeft" align="right" valign="top"><a id="a6026c7b700c169adf8a647ff05760621"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>TileNodeRegistry</b></td></tr>
-<tr class="separator:a6026c7b700c169adf8a647ff05760621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TileNode represents a single tile. TileNode has 5 children: one <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_surface_node.html">SurfaceNode</a> that renders the actual tile content under a MatrixTransform; and four TileNodes representing the LOD+1 quadtree tiles under this tile. </p>

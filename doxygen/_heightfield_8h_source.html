@@ -140,19 +140,19 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            func(*ptr);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#afae75706ce9f5d5b28faebe8d54fbf3d">Heightfield::width</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">unsigned</span> Heightfield::width()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> _image-&gt;width();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a1b9374c1230900b3f2157037b64d20f9">Heightfield::height</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">unsigned</span> Heightfield::height()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> _image-&gt;height();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html">   96</a></span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html">Heightfield</a> : <span class="keyword">public</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit.html">Inherit</a>&lt;Image, Heightfield&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html">   96</a></span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html">Heightfield</a> : <span class="keyword">public</span> Inherit&lt;Image, Heightfield&gt;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html">Heightfield</a>();</div>
@@ -202,7 +202,7 @@ $(function() {
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html#a7d55df9bbed8f0820b5cfdbc7d36d28f">  155</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html#a7d55df9bbed8f0820b5cfdbc7d36d28f">Heightfield::forEachHeight</a>(FUNC func)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordtype">float</span>* ptr = data&lt;float&gt;();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ab16738a65bd5682c9065f486588a8147">sizeInPixels</a>(); ++i, ++ptr)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; sizeInPixels(); ++i, ++ptr)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            func(*ptr);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
@@ -210,7 +210,7 @@ $(function() {
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html#a7d55df9bbed8f0820b5cfdbc7d36d28f">Heightfield::forEachHeight</a>(FUNC func)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordtype">float</span>* ptr = data&lt;float&gt;();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ab16738a65bd5682c9065f486588a8147">sizeInPixels</a>(); ++i, ++ptr)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; sizeInPixels(); ++i, ++ptr)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            func(*ptr);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -219,10 +219,6 @@ $(function() {
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield_html_a7d55df9bbed8f0820b5cfdbc7d36d28f"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html#a7d55df9bbed8f0820b5cfdbc7d36d28f">ROCKY_NAMESPACE::Heightfield::forEachHeight</a></div><div class="ttdeci">void forEachHeight(FUNC func)</div><div class="ttdef"><b>Definition:</b> Heightfield.h:155</div></div>
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield_html_afba2eeebaa7050961a963273ab1bfd10"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_heightfield.html#afba2eeebaa7050961a963273ab1bfd10">ROCKY_NAMESPACE::Heightfield::heightAt</a></div><div class="ttdeci">float &amp; heightAt(unsigned col, unsigned row)</div><div class="ttdoc">Access the height value at col, row.</div><div class="ttdef"><b>Definition:</b> Heightfield.h:144</div></div>
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html">ROCKY_NAMESPACE::Image</a></div><div class="ttdef"><b>Definition:</b> Image.h:19</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image_html_a1b9374c1230900b3f2157037b64d20f9"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#a1b9374c1230900b3f2157037b64d20f9">ROCKY_NAMESPACE::Image::height</a></div><div class="ttdeci">unsigned height() const</div><div class="ttdoc">Number of rows.</div><div class="ttdef"><b>Definition:</b> Image.h:49</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image_html_ab16738a65bd5682c9065f486588a8147"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#ab16738a65bd5682c9065f486588a8147">ROCKY_NAMESPACE::Image::sizeInPixels</a></div><div class="ttdeci">unsigned sizeInPixels() const</div><div class="ttdoc">Size of this image in pixels.</div><div class="ttdef"><b>Definition:</b> Image.h:285</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image_html_afae75706ce9f5d5b28faebe8d54fbf3d"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_image.html#afae75706ce9f5d5b28faebe8d54fbf3d">ROCKY_NAMESPACE::Image::width</a></div><div class="ttdeci">unsigned width() const</div><div class="ttdoc">number of colums</div><div class="ttdef"><b>Definition:</b> Image.h:46</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_inherit.html">ROCKY_NAMESPACE::Inherit</a></div><div class="ttdef"><b>Definition:</b> Common.h:76</div></div>
 <div class="ttc" id="anamespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></div><div class="ttdef"><b>Definition:</b> Callbacks.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

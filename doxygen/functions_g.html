@@ -72,6 +72,9 @@ $(function() {
 <li>GDALImageLayer()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_image_layer.html#a1445f01e812d08be388ae523927477f6">ROCKY_NAMESPACE::GDALImageLayer</a>
 </li>
+<li>geocentricSRS()
+: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html#a6754dc2483f5e751b14ce1439a288190">ROCKY_NAMESPACE::SRS</a>
+</li>
 <li>geocentricToGeodetic()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_ellipsoid.html#a69025f6a765b79f8d5e9ed6015a00933">ROCKY_NAMESPACE::Ellipsoid</a>
 </li>
@@ -106,13 +109,13 @@ $(function() {
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_profile.html#ab39a417d38843f61befd9c2b710a2316">ROCKY_NAMESPACE::Profile</a>
 </li>
 <li>GeoHeightfield()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html#a1175e1397e103c5faff335c98dd98406">ROCKY_NAMESPACE::GeoHeightfield</a>
+: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html#ae77574803994e2fb02e6b18254eac360">ROCKY_NAMESPACE::GeoHeightfield</a>
 </li>
 <li>Geoid()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geoid.html#a542e2bbe1debe8f9408bae6f505f4f54">ROCKY_NAMESPACE::Geoid</a>
 </li>
 <li>GeoImage()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html#ae9d71ec36e4bf728e6c4976939d579d3">ROCKY_NAMESPACE::GeoImage</a>
+: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html#acceef1704fdd0bb942d8b0339c391b7e">ROCKY_NAMESPACE::GeoImage</a>
 </li>
 <li>GeometryPool()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a3c9bfbb85cb177fcf5fd291fb10dc22d">ROCKY_NAMESPACE::GeometryPool</a>
@@ -121,7 +124,7 @@ $(function() {
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_context.html#a3cb846c4e44056642e16efdcf2b99890">ROCKY_NAMESPACE::TerrainContext</a>
 </li>
 <li>GeoPoint()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html#aa0e8acd38518431c90530b57b13da6f8">ROCKY_NAMESPACE::GeoPoint</a>
+: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html#ab2dea9f091b09c5bb9346367a05bf72b">ROCKY_NAMESPACE::GeoPoint</a>
 </li>
 <li>geoSRS()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html#abe63043bf209dfe07878fbe10977eed1">ROCKY_NAMESPACE::SRS</a>
@@ -140,9 +143,6 @@ $(function() {
 </li>
 <li>getBounds()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_extent.html#aea7ca1bb872b55b87ac38cc675ce6308">ROCKY_NAMESPACE::GeoExtent</a>
-</li>
-<li>getBreakTetherActions()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a9dff8bbaa9b94af5a1adaeeb488878ee">ROCKY_NAMESPACE::MapManipulator::Settings</a>
 </li>
 <li>getCanonicalPath()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_u_r_i_context.html#adbb29b56183200fc9d40971cacec1565">ROCKY_NAMESPACE::URIContext</a>
@@ -194,9 +194,6 @@ $(function() {
 <li>getJulianDay()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_date_time.html#a8364ca4848f5c33b02e67e2cf00f8cea">ROCKY_NAMESPACE::DateTime</a>
 </li>
-<li>getKeyboardSensitivity()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a3857d90345dd7fc483c005939b294b18">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
 <li>getLayer()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer_reference.html#aeb7edfbc842111370b5ef82aa165a76f">ROCKY_NAMESPACE::LayerReference&lt; T &gt;</a>
 </li>
@@ -206,44 +203,11 @@ $(function() {
 <li>getLevelOfDetailForHorizResolution()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_profile.html#a82d32e20535a924ac14801168ad4af92">ROCKY_NAMESPACE::Profile</a>
 </li>
-<li>getLockAzimuthWhilePanning()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#acd89922a182546ada22230fa4807ac63">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMaxDistance()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a8cfa131bc98a1a627df3e0c680a0b486">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMaxPitch()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#af1a4777d205bb83bf2a4961db36f1633">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMaxXOffset()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#af2d781daa8b88b14e341c5bbea667af6">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMaxYOffset()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a87020e1635047dc2abf70a1d2ba4fc81">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMinAcceptTime()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_cache_policy.html#a9f84a8e78fb412168fba59305038e1d9">ROCKY_NAMESPACE::CachePolicy</a>
-</li>
-<li>getMinDistance()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a4fd0566e63778a97cbf8d27ed7dd6065">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMinPitch()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#af4bc3d8cbc5ec3cae9cfa360bfe930fa">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getMouseSensitivity()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a8224a008aab9766ee4a79d3386fef981">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
 <li>getNumLODs()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_selection_info.html#a3fe5430c8a8d7e9c56a497818bdc214b">ROCKY_NAMESPACE::SelectionInfo</a>
 </li>
 <li>getNumSkirtElements()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a4736eb668b746bdea0cfc09cb6a23c3e">ROCKY_NAMESPACE::GeometryPool</a>
-</li>
-<li>getOpenAutomatically()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_layer.html#aa5274e94708f6e51cf0ac8fe69c6b90c">ROCKY_NAMESPACE::Layer</a>
-</li>
-<li>getOrthoTracksPerspective()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a25a55c2752f75a1b1fff103b8dcb831a">ROCKY_NAMESPACE::MapManipulator::Settings</a>
 </li>
 <li>getPooledGeometry()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a00217ecfa7803cf4248ae70f098af547">ROCKY_NAMESPACE::GeometryPool</a>
@@ -266,23 +230,8 @@ $(function() {
 <li>getRootKeys()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_profile.html#a18e7fcb277d29d3948e55bb604346d6c">ROCKY_NAMESPACE::Profile</a>
 </li>
-<li>getScrollSensitivity()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#aa087b68274ecd949f74a42bdc94400ae">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getSingleAxisRotation()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a3454605eaed0bfee1d0b6c2af3de0f43">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getTerrainAvoidanceEnabled()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a1fb25826b643ef00a981f242540b7ac7">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
-<li>getTerrainAvoidanceMinimumDistance()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a5bbea2d7aa6dba0c5e1398a5c44ae95a">ROCKY_NAMESPACE::MapManipulator::Settings</a>
-</li>
 <li>getTile()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_node_registry.html#aeb3bef63ddc75a4f0baf094252b62e3d">ROCKY_NAMESPACE::TileNodeRegistry</a>
-</li>
-<li>getTouchSensitivity()
-: <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_manipulator_1_1_settings.html#a68d0697047ca698f5739815928d13ccf">ROCKY_NAMESPACE::MapManipulator::Settings</a>
 </li>
 <li>getUnitsPerPixel()
 : <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html#ad2af54b70f16e9920554338aebce8637">ROCKY_NAMESPACE::GeoImage</a>

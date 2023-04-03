@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            Image::Interpolation interp = Image::BILINEAR) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// Functor to GeoHeightField&#39;s by resolution</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield_1_1_sort_by_resolution_functor.html">  109</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield_1_1_sort_by_resolution_functor.html">SortByResolutionFunctor</a></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">struct </span>SortByResolutionFunctor</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">bool</span> operator() (<span class="keyword">const</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html">GeoHeightfield</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html">GeoHeightfield</a>&amp; rhs)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">            </span>{</div>
@@ -141,7 +141,7 @@ $(function() {
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        };</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_extent.html">GeoExtent</a> _extent;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        GeoExtent _extent;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        shared_ptr&lt;Heightfield&gt; _hf;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">float</span> _minHeight, _maxHeight;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        dvec2 _resolution;</div>
@@ -167,9 +167,8 @@ $(function() {
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield_html_ae360244bd9dc91ec5ae5d42b7914be26"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html#ae360244bd9dc91ec5ae5d42b7914be26">ROCKY_NAMESPACE::GeoHeightfield::heightfield</a></div><div class="ttdeci">shared_ptr&lt; Heightfield &gt; heightfield() const</div><div class="ttdoc">Gets a pointer to the underlying OSG heightfield.</div><div class="ttdef"><b>Definition:</b> GeoHeightfield.h:96</div></div>
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield_html_af61095c6247090651adfec65cf1e6f61"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html#af61095c6247090651adfec65cf1e6f61">ROCKY_NAMESPACE::GeoHeightfield::maxHeight</a></div><div class="ttdeci">float maxHeight() const</div><div class="ttdoc">The maximum height in the heightfield.</div><div class="ttdef"><b>Definition:</b> GeoHeightfield.h:93</div></div>
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">ROCKY_NAMESPACE::SRS</a></div><div class="ttdef"><b>Definition:</b> SRS.h:21</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html">ROCKY_NAMESPACE::SRSOperation</a></div><div class="ttdef"><b>Definition:</b> SRS.h:173</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s_operation.html">ROCKY_NAMESPACE::SRSOperation</a></div><div class="ttdef"><b>Definition:</b> SRS.h:176</div></div>
 <div class="ttc" id="anamespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></div><div class="ttdef"><b>Definition:</b> Callbacks.h:13</div></div>
-<div class="ttc" id="astruct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield_1_1_sort_by_resolution_functor_html"><div class="ttname"><a href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield_1_1_sort_by_resolution_functor.html">ROCKY_NAMESPACE::GeoHeightfield::SortByResolutionFunctor</a></div><div class="ttdef"><b>Definition:</b> GeoHeightfield.h:110</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

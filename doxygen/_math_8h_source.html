@@ -110,15 +110,15 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">   44</a></span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">Sphere</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT Sphere</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        dvec3 center;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">double</span> radius;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">Sphere</a>() : center(0, 0, 0), radius(-1) { }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        Sphere() : center(0, 0, 0), radius(-1) { }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">Sphere</a>(<span class="keyword">const</span> dvec3&amp; a, <span class="keywordtype">double</span> b) :</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Sphere(<span class="keyword">const</span> dvec3&amp; a, <span class="keywordtype">double</span> b) :</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            center(a), radius(b) { }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> expandBy(<span class="keyword">const</span> dvec3&amp; v) {</div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">   77</a></span>&#160;    <span class="keyword">struct </span>ROCKY_EXPORT <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">struct </span>ROCKY_EXPORT Box</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {        </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">double</span> xmin, ymin, zmin;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">double</span> xmax, ymax, zmax;</div>
@@ -163,18 +163,18 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                ymin + 0.5*(ymax - ymin),</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                zmin + 0.5*(zmax - zmin));</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> intersects(<span class="keyword">const</span> Box&amp; rhs)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordtype">bool</span> exclusive =</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                xmin &gt; rhs.xmax || xmax &lt; rhs.xmin ||</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                ymin &gt; rhs.ymax || ymax &lt; rhs.ymin ||</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                zmin &gt; rhs.zmax || zmax &lt; rhs.zmin;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> !exclusive;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a> intersection_with(<span class="keyword">const</span> <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        Box intersection_with(<span class="keyword">const</span> Box&amp;) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a> union_with(<span class="keyword">const</span> <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        Box union_with(<span class="keyword">const</span> Box&amp;) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>&amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> Box&amp;) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">void</span> expandBy(<span class="keyword">const</span> dvec3&amp; p) {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            xmin = std::min(xmin, p.x);</div>
@@ -185,7 +185,7 @@ $(function() {
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            zmax = std::max(zmax, p.z);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> expandBy(<span class="keyword">const</span> <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>&amp; rhs) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> expandBy(<span class="keyword">const</span> Box&amp; rhs) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            xmin = std::min(xmin, rhs.xmin);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            xmax = std::max(xmax, rhs.xmax);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            ymin = std::min(ymin, rhs.ymin);</div>
@@ -202,8 +202,8 @@ $(function() {
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">void</span> expandBy(<span class="keyword">const</span> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">Sphere</a>&amp; rhs) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            expandBy(<a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>(</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">void</span> expandBy(<span class="keyword">const</span> Sphere&amp; rhs) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            expandBy(Box(</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                rhs.center.x - rhs.radius, rhs.center.x + rhs.radius,</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                rhs.center.y - rhs.radius, rhs.center.y + rhs.radius,</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                rhs.center.z - rhs.radius, rhs.center.z + rhs.radius));</div>
@@ -217,15 +217,15 @@ $(function() {
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                zmin &lt;= zmax;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>() :</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        Box() :</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            xmin(DBL_MAX), ymin(DBL_MAX), zmin(DBL_MAX),</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            xmax(-DBL_MAX), ymax(-DBL_MAX), zmax(-DBL_MAX) { }</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>(<span class="keywordtype">double</span> x0, <span class="keywordtype">double</span> y0, <span class="keywordtype">double</span> z0, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> z1) :</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        Box(<span class="keywordtype">double</span> x0, <span class="keywordtype">double</span> y0, <span class="keywordtype">double</span> z0, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> z1) :</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            xmin(x0), ymin(y0), zmin(z0),</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            xmax(x1), ymax(y1), zmax(z1) { }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">Box</a>(<span class="keywordtype">double</span> x0, <span class="keywordtype">double</span> y0, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1) :</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        Box(<span class="keywordtype">double</span> x0, <span class="keywordtype">double</span> y0, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1) :</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            xmin(x0), ymin(y0), zmin(0.0),</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            xmax(x1), ymax(y1), zmax(0.0) { }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    };</div>
@@ -570,9 +570,7 @@ $(function() {
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;}</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_sphere.html">ROCKY_NAMESPACE::Sphere</a></div><div class="ttdef"><b>Definition:</b> Math.h:45</div></div>
 <div class="ttc" id="anamespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></div><div class="ttdef"><b>Definition:</b> Callbacks.h:13</div></div>
-<div class="ttc" id="astruct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box_html"><div class="ttname"><a href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_box.html">ROCKY_NAMESPACE::Box</a></div><div class="ttdef"><b>Definition:</b> Math.h:78</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

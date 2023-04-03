@@ -68,7 +68,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -80,15 +79,10 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="_geometry_pool_8h_source.html">GeometryPool.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ada5d9065cf77f29b929c8bdcdff34b98"><td class="memItemLeft" align="right" valign="top"><a id="ada5d9065cf77f29b929c8bdcdff34b98"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SharedGeometries</b> = std::unordered_map&lt; <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_key.html">GeometryKey</a>, vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_shared_geometry.html">SharedGeometry</a> &gt; &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SharedGeometries</b> = std::unordered_map&lt; GeometryKey, vsg::ref_ptr&lt; SharedGeometry &gt; &gt;</td></tr>
 <tr class="separator:ada5d9065cf77f29b929c8bdcdff34b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -97,10 +91,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a3c9bfbb85cb177fcf5fd291fb10dc22d">GeometryPool</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">SRS</a> &amp;worldSRS)</td></tr>
 <tr class="memdesc:a3c9bfbb85cb177fcf5fd291fb10dc22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the geometry pool. <br /></td></tr>
 <tr class="separator:a3c9bfbb85cb177fcf5fd291fb10dc22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00217ecfa7803cf4248ae70f098af547"><td class="memItemLeft" align="right" valign="top">vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_shared_geometry.html">SharedGeometry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a00217ecfa7803cf4248ae70f098af547">getPooledGeometry</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;tileKey, const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a> &amp;settings, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_cancelable.html">Cancelable</a> *state)</td></tr>
+<tr class="memitem:a00217ecfa7803cf4248ae70f098af547"><td class="memItemLeft" align="right" valign="top">vsg::ref_ptr&lt; SharedGeometry &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a00217ecfa7803cf4248ae70f098af547">getPooledGeometry</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;tileKey, const Settings &amp;settings, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_cancelable.html">Cancelable</a> *state)</td></tr>
 <tr class="separator:a00217ecfa7803cf4248ae70f098af547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4736eb668b746bdea0cfc09cb6a23c3e"><td class="memItemLeft" align="right" valign="top"><a id="a4736eb668b746bdea0cfc09cb6a23c3e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a4736eb668b746bdea0cfc09cb6a23c3e">getNumSkirtElements</a> (const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a> &amp;settings) const</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#a4736eb668b746bdea0cfc09cb6a23c3e">getNumSkirtElements</a> (const Settings &amp;settings) const</td></tr>
 <tr class="memdesc:a4736eb668b746bdea0cfc09cb6a23c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements (incides) in the terrain skirt if applicable. <br /></td></tr>
 <tr class="separator:a4736eb668b746bdea0cfc09cb6a23c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a321840294b365876986e161298998184"><td class="memItemLeft" align="right" valign="top"><a id="a321840294b365876986e161298998184"></a>
@@ -112,13 +106,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae2355abda3bda9fe01e4def5d4f8e8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear and reset the pool. <br /></td></tr>
 <tr class="separator:ae2355abda3bda9fe01e4def5d4f8e8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac637ea517993f57ad49639dbd3f93c2f"><td class="memItemLeft" align="right" valign="top"><a id="ac637ea517993f57ad49639dbd3f93c2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createKeyForTileKey</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;tileKey, unsigned size, <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_key.html">GeometryKey</a> &amp;out) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createKeyForTileKey</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;tileKey, unsigned size, GeometryKey &amp;out) const</td></tr>
 <tr class="separator:ac637ea517993f57ad49639dbd3f93c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e901cb68543e2a885f2c6330afa48cd"><td class="memItemLeft" align="right" valign="top"><a id="a6e901cb68543e2a885f2c6330afa48cd"></a>
-vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_shared_geometry.html">SharedGeometry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createGeometry</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;tileKey, const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a> &amp;settings, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_cancelable.html">Cancelable</a> *progress) const</td></tr>
+vsg::ref_ptr&lt; SharedGeometry &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createGeometry</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;tileKey, const Settings &amp;settings, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_cancelable.html">Cancelable</a> *progress) const</td></tr>
 <tr class="separator:a6e901cb68543e2a885f2c6330afa48cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae54e0590589efd3982ceb3ede9a172"><td class="memItemLeft" align="right" valign="top"><a id="afae54e0590589efd3982ceb3ede9a172"></a>
-vsg::ref_ptr&lt; vsg::ushortArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createIndices</b> (const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a> &amp;settings) const</td></tr>
+vsg::ref_ptr&lt; vsg::ushortArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createIndices</b> (const Settings &amp;settings) const</td></tr>
 <tr class="separator:afae54e0590589efd3982ceb3ede9a172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75cc67544b8b3319b335ca5049a8b158"><td class="memItemLeft" align="right" valign="top"><a id="a75cc67544b8b3319b335ca5049a8b158"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>tessellateSurface</b> (unsigned tileSize, vsg::ref_ptr&lt; vsg::ushortArray &gt; primSet) const</td></tr>
@@ -129,7 +123,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac6ba616b564bd4b5a357e9beb149a392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_s_r_s.html">SRS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html#ac6ba616b564bd4b5a357e9beb149a392">_worldSRS</a></td></tr>
 <tr class="separator:ac6ba616b564bd4b5a357e9beb149a392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a121c7f471b41cc2bc10f255c1cae9858"><td class="memItemLeft" align="right" valign="top"><a id="a121c7f471b41cc2bc10f255c1cae9858"></a>
-util::Gate&lt; <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_key.html">GeometryKey</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_keygate</b></td></tr>
+util::Gate&lt; GeometryKey &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_keygate</b></td></tr>
 <tr class="separator:a121c7f471b41cc2bc10f255c1cae9858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a1bf7f8a20b13152a1ae31b393ccc5"><td class="memItemLeft" align="right" valign="top"><a id="a11a1bf7f8a20b13152a1ae31b393ccc5"></a>
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>_mutex</b></td></tr>
@@ -141,7 +135,7 @@ SharedGeometries&#160;</td><td class="memItemRight" valign="bottom"><b>_sharedGe
 vsg::ref_ptr&lt; vsg::ushortArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_defaultIndices</b></td></tr>
 <tr class="separator:a98546a668e65295566fad84bb0911cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ee8d2285f8b89e0ca4c3c1b3a85b2f"><td class="memItemLeft" align="right" valign="top"><a id="a34ee8d2285f8b89e0ca4c3c1b3a85b2f"></a>
-<a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_defaultIndicesSettings</b></td></tr>
+Settings&#160;</td><td class="memItemRight" valign="bottom"><b>_defaultIndicesSettings</b></td></tr>
 <tr class="separator:a34ee8d2285f8b89e0ca4c3c1b3a85b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cdb30f208171d723881c39fcf75cdfd"><td class="memItemLeft" align="right" valign="top"><a id="a9cdb30f208171d723881c39fcf75cdfd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_enabled</b></td></tr>
@@ -162,7 +156,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_debug</b></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_shared_geometry.html">SharedGeometry</a> &gt; GeometryPool::getPooledGeometry </td>
+          <td class="memname">vsg::ref_ptr&lt; SharedGeometry &gt; GeometryPool::getPooledGeometry </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_tile_key.html">TileKey</a> &amp;&#160;</td>
           <td class="paramname"><em>tileKey</em>, </td>
@@ -170,7 +164,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_debug</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool_1_1_settings.html">Settings</a> &amp;&#160;</td>
+          <td class="paramtype">const Settings &amp;&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>

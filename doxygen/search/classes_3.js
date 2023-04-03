@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['data_687',['Data',['../struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_transform_1_1_data.html',1,'ROCKY_NAMESPACE::GeoTransform::Data'],['../struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_profile_1_1_data.html',1,'ROCKY_NAMESPACE::Profile::Data']]],
-  ['dataextent_688',['DataExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_extent.html',1,'ROCKY_NAMESPACE']]],
-  ['datainterface_689',['DataInterface',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_data_interface.html',1,'ROCKY_NAMESPACE']]],
-  ['datetime_690',['DateTime',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_date_time.html',1,'ROCKY_NAMESPACE']]],
-  ['datetimeextent_691',['DateTimeExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_date_time_extent.html',1,'ROCKY_NAMESPACE']]],
-  ['distance_692',['Distance',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_distance.html',1,'ROCKY_NAMESPACE']]],
-  ['driver_693',['Driver',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_1_1_driver.html',1,'ROCKY_NAMESPACE::GDAL::Driver'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_m_b_tiles_1_1_driver.html',1,'ROCKY_NAMESPACE::MBTiles::Driver'],['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_t_m_s_1_1_driver.html',1,'ROCKY_NAMESPACE::TMS::Driver']]],
-  ['duration_694',['Duration',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_duration.html',1,'ROCKY_NAMESPACE']]]
+  ['gdalelevationlayer_568',['GDALElevationLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_elevation_layer.html',1,'ROCKY_NAMESPACE']]],
+  ['gdalimagelayer_569',['GDALImageLayer',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_g_d_a_l_image_layer.html',1,'ROCKY_NAMESPACE']]],
+  ['geocircle_570',['GeoCircle',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_circle.html',1,'ROCKY_NAMESPACE']]],
+  ['geoextent_571',['GeoExtent',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_extent.html',1,'ROCKY_NAMESPACE']]],
+  ['geoheightfield_572',['GeoHeightfield',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_heightfield.html',1,'ROCKY_NAMESPACE']]],
+  ['geoid_573',['Geoid',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geoid.html',1,'ROCKY_NAMESPACE']]],
+  ['geoimage_574',['GeoImage',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_image.html',1,'ROCKY_NAMESPACE']]],
+  ['geometrypool_575',['GeometryPool',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geometry_pool.html',1,'ROCKY_NAMESPACE']]],
+  ['geopoint_576',['GeoPoint',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html',1,'ROCKY_NAMESPACE']]],
+  ['geotransform_577',['GeoTransform',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_transform.html',1,'ROCKY_NAMESPACE']]]
 ];
