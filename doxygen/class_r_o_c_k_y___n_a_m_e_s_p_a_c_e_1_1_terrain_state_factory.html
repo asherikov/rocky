@@ -84,18 +84,19 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">TextureDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a single texutre and its (possible shared) sampler.  <a href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a112c6bd3eee80e2e0633a654a30d8c84"><td class="memItemLeft" align="right" valign="top"><a id="a112c6bd3eee80e2e0633a654a30d8c84"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a112c6bd3eee80e2e0633a654a30d8c84">TerrainStateFactory</a> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_settings.html">TerrainSettings</a> &amp;settings)</td></tr>
-<tr class="memdesc:a112c6bd3eee80e2e0633a654a30d8c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the factory. <br /></td></tr>
-<tr class="separator:a112c6bd3eee80e2e0633a654a30d8c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaefd8558c56c96ac2d7c52d584240abf"><td class="memItemLeft" align="right" valign="top"><a id="aaefd8558c56c96ac2d7c52d584240abf"></a>
-vsg::ref_ptr&lt; vsg::StateGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aaefd8558c56c96ac2d7c52d584240abf">createTerrainStateGroup</a> () const</td></tr>
-<tr class="memdesc:aaefd8558c56c96ac2d7c52d584240abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a state group for rendering terrain. <br /></td></tr>
-<tr class="separator:aaefd8558c56c96ac2d7c52d584240abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f58454d592bd2957d1caf3f0c52234"><td class="memItemLeft" align="right" valign="top"><a id="a34f58454d592bd2957d1caf3f0c52234"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a34f58454d592bd2957d1caf3f0c52234">TerrainStateFactory</a> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a> &amp;)</td></tr>
+<tr class="memdesc:a34f58454d592bd2957d1caf3f0c52234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the factory. <br /></td></tr>
+<tr class="separator:a34f58454d592bd2957d1caf3f0c52234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8b57ece343e635a44f356f0f330070"><td class="memItemLeft" align="right" valign="top"><a id="a0f8b57ece343e635a44f356f0f330070"></a>
+vsg::ref_ptr&lt; vsg::StateGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a0f8b57ece343e635a44f356f0f330070">createTerrainStateGroup</a> ()</td></tr>
+<tr class="memdesc:a0f8b57ece343e635a44f356f0f330070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a state group for rendering terrain. <br /></td></tr>
+<tr class="separator:a0f8b57ece343e635a44f356f0f330070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30286872c9a39be60c09a2c6c3ae478a"><td class="memItemLeft" align="right" valign="top"><a id="a30286872c9a39be60c09a2c6c3ae478a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a30286872c9a39be60c09a2c6c3ae478a">updateTerrainTileDescriptors</a> (const TerrainTileRenderModel &amp;renderModel, vsg::ref_ptr&lt; vsg::StateGroup &gt; stategroup, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a> &amp;runtime) const</td></tr>
 <tr class="memdesc:a30286872c9a39be60c09a2c6c3ae478a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a state group for rendering a specific terrain tile. <br /></td></tr>
@@ -113,8 +114,6 @@ vsg::ref_ptr&lt; vsg::GraphicsPipelineConfig &gt;&#160;</td><td class="memItemRi
 <tr class="separator:a11c5b7a921ed94682f5d3aea3370af59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3ef561bb3c1e73b447aa09e8e6bea72"><td class="memItemLeft" align="right" valign="top">vsg::ref_ptr&lt; vsg::ShaderSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aa3ef561bb3c1e73b447aa09e8e6bea72">shaderSet</a></td></tr>
 <tr class="separator:aa3ef561bb3c1e73b447aa09e8e6bea72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1915642e4b4d7e658dd1daf1d7b0e1f"><td class="memItemLeft" align="right" valign="top">vsg::ref_ptr&lt; vsg::SharedObjects &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#ad1915642e4b4d7e658dd1daf1d7b0e1f">sharedObjects</a></td></tr>
-<tr class="separator:ad1915642e4b4d7e658dd1daf1d7b0e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5856aa20de84f83e3a3e06884defc7"><td class="memItemLeft" align="right" valign="top">TerrainTileDescriptors&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aca5856aa20de84f83e3a3e06884defc7">defaultTileDescriptors</a></td></tr>
 <tr class="separator:aca5856aa20de84f83e3a3e06884defc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61cdfaf4fd72f633c89f1299e24d812c"><td class="memItemLeft" align="right" valign="top"><a id="a61cdfaf4fd72f633c89f1299e24d812c"></a>
@@ -135,11 +134,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a02daaa2d8aabc3b485c4b2be5a8d3007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a02daaa2d8aabc3b485c4b2be5a8d3007">createDefaultDescriptors</a> ()</td></tr>
 <tr class="separator:a02daaa2d8aabc3b485c4b2be5a8d3007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab897a2e4a3ed98a86df8e2249a63f36f"><td class="memItemLeft" align="right" valign="top"><a id="ab897a2e4a3ed98a86df8e2249a63f36f"></a>
-virtual vsg::ref_ptr&lt; vsg::ShaderSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#ab897a2e4a3ed98a86df8e2249a63f36f">createShaderSet</a> () const</td></tr>
+vsg::ref_ptr&lt; vsg::ShaderSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#ab897a2e4a3ed98a86df8e2249a63f36f">createShaderSet</a> () const</td></tr>
 <tr class="memdesc:ab897a2e4a3ed98a86df8e2249a63f36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the base shader set used when rendering terrain. <br /></td></tr>
 <tr class="separator:ab897a2e4a3ed98a86df8e2249a63f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44f5ea924b59051cc3a9468190d0a2e0"><td class="memItemLeft" align="right" valign="top">virtual vsg::ref_ptr&lt; vsg::GraphicsPipelineConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a44f5ea924b59051cc3a9468190d0a2e0">createPipelineConfig</a> (vsg::SharedObjects *) const</td></tr>
-<tr class="separator:a44f5ea924b59051cc3a9468190d0a2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c72977e9684a8d9a5ef46f181feacd"><td class="memItemLeft" align="right" valign="top">vsg::ref_ptr&lt; vsg::GraphicsPipelineConfig &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a56c72977e9684a8d9a5ef46f181feacd">createPipelineConfig</a> () const</td></tr>
+<tr class="separator:a56c72977e9684a8d9a5ef46f181feacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -160,9 +159,9 @@ struct {</td></tr>
 <tr class="memitem:a6bfdb35085cacd9c9a0003b6fc7ba18a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a6bfdb35085cacd9c9a0003b6fc7ba18a">textures</a></td></tr>
 <tr class="memdesc:a6bfdb35085cacd9c9a0003b6fc7ba18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">stock samplers to use for terrain textures <br /></td></tr>
 <tr class="separator:a6bfdb35085cacd9c9a0003b6fc7ba18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acabc0eb1282846aa87284e762c1251d8"><td class="memItemLeft" align="right" valign="top"><a id="acabc0eb1282846aa87284e762c1251d8"></a>
-<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_settings.html">TerrainSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_settings</b></td></tr>
-<tr class="separator:acabc0eb1282846aa87284e762c1251d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a785b7c5e03d362f4f464f961a7a75d"><td class="memItemLeft" align="right" valign="top"><a id="a3a785b7c5e03d362f4f464f961a7a75d"></a>
+<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>_runtime</b></td></tr>
+<tr class="separator:a3a785b7c5e03d362f4f464f961a7a75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html">TerrainStateFactory</a> creates all the Vulkan state necessary to render the terrain.</p>
@@ -194,8 +193,8 @@ struct {</td></tr>
 
 </div>
 </div>
-<a id="a44f5ea924b59051cc3a9468190d0a2e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44f5ea924b59051cc3a9468190d0a2e0">&#9670;&nbsp;</a></span>createPipelineConfig()</h2>
+<a id="a56c72977e9684a8d9a5ef46f181feacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c72977e9684a8d9a5ef46f181feacd">&#9670;&nbsp;</a></span>createPipelineConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,14 +205,13 @@ struct {</td></tr>
         <tr>
           <td class="memname">vsg::ref_ptr&lt; vsg::GraphicsPipelineConfig &gt; TerrainStateFactory::createPipelineConfig </td>
           <td>(</td>
-          <td class="paramtype">vsg::SharedObjects *&#160;</td>
-          <td class="paramname"><em>sharedObjects</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -249,21 +247,6 @@ struct {</td></tr>
       </table>
 </div><div class="memdoc">
 <p>VSG parent shader set that we use to develop the terrain tile state group for each tile. </p>
-
-</div>
-</div>
-<a id="ad1915642e4b4d7e658dd1daf1d7b0e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1915642e4b4d7e658dd1daf1d7b0e1f">&#9670;&nbsp;</a></span>sharedObjects</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vsg::ref_ptr&lt;vsg::SharedObjects&gt; ROCKY_NAMESPACE::TerrainStateFactory::sharedObjects</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_cache.html" title="Base class for a cache.">Cache</a> of VSG objects shared by different parts of the terrain rendering subsystem. </p>
 
 </div>
 </div>
