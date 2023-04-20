@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rocky: src/rocky_vsg/TerrainStateFactory.h Source File</title>
+<title>Rocky: src/rocky_vsg/TerrainState.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">TerrainStateFactory.h</div>  </div>
+<div class="title">TerrainState.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
@@ -90,10 +90,10 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">class </span>TerrainTileRenderModel;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html">   33</a></span>&#160;    <span class="keyword">class </span>ROCKY_VSG_INTERNAL <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html">TerrainStateFactory</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html">   33</a></span>&#160;    <span class="keyword">class </span>ROCKY_VSG_INTERNAL <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html">TerrainState</a></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html">TerrainStateFactory</a>(<a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a>&amp;);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html">TerrainState</a>(<a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a>&amp;);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        vsg::ref_ptr&lt;vsg::StateGroup&gt; createTerrainStateGroup();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
@@ -102,15 +102,15 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            vsg::ref_ptr&lt;vsg::StateGroup&gt; stategroup,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a>&amp; runtime) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#acc444b2108950870376d2a0bfb6e4f16">   49</a></span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">Status</a> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#acc444b2108950870376d2a0bfb6e4f16">status</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a4123bbb2d815de5ec72da51de8054bcb">   49</a></span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">Status</a> <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a4123bbb2d815de5ec72da51de8054bcb">status</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a11c5b7a921ed94682f5d3aea3370af59">   54</a></span>&#160;        vsg::ref_ptr&lt;vsg::GraphicsPipelineConfig&gt; <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a11c5b7a921ed94682f5d3aea3370af59">pipelineConfig</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a1f021a916ba766ed212c25ff0be0f044">   54</a></span>&#160;        vsg::ref_ptr&lt;vsg::GraphicsPipelineConfig&gt; <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a1f021a916ba766ed212c25ff0be0f044">pipelineConfig</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aa3ef561bb3c1e73b447aa09e8e6bea72">   58</a></span>&#160;        vsg::ref_ptr&lt;vsg::ShaderSet&gt; <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aa3ef561bb3c1e73b447aa09e8e6bea72">shaderSet</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#ac7f3063df9fd493a24c647258f4f901b">   58</a></span>&#160;        vsg::ref_ptr&lt;vsg::ShaderSet&gt; <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#ac7f3063df9fd493a24c647258f4f901b">shaderSet</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aca5856aa20de84f83e3a3e06884defc7">   64</a></span>&#160;        TerrainTileDescriptors <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aca5856aa20de84f83e3a3e06884defc7">defaultTileDescriptors</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a8ddf338309627a481f44a2da34ba0ae1">   64</a></span>&#160;        TerrainTileDescriptors <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a8ddf338309627a481f44a2da34ba0ae1">defaultTileDescriptors</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        vsg::ref_ptr&lt;vsg::GraphicsPipelineConfig&gt; createPipelineConfig() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">   83</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">TextureDef</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">   83</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">TextureDef</a></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">// name in the shader</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            std::string name;</div>
@@ -137,26 +137,26 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">struct</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">TextureDef</a> color;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">TextureDef</a> colorParent;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">TextureDef</a> elevation;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">TextureDef</a> normal;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">TextureDef</a> color;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">TextureDef</a> colorParent;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">TextureDef</a> elevation;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">TextureDef</a> normal;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a6bfdb35085cacd9c9a0003b6fc7ba18a">  106</a></span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a6bfdb35085cacd9c9a0003b6fc7ba18a">textures</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a7d1168529710048ae9e5f80ff3be930f">  106</a></span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a7d1168529710048ae9e5f80ff3be930f">textures</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">RuntimeContext</a>&amp; _runtime;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">ROCKY_NAMESPACE::RuntimeContext</a></div><div class="ttdef"><b>Definition:</b> RuntimeContext.h:33</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime_context.html">ROCKY_NAMESPACE::RuntimeContext</a></div><div class="ttdef"><b>Definition:</b> RuntimeContext.h:34</div></div>
 <div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">ROCKY_NAMESPACE::Status</a></div><div class="ttdef"><b>Definition:</b> Status.h:15</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html">ROCKY_NAMESPACE::TerrainStateFactory</a></div><div class="ttdef"><b>Definition:</b> TerrainStateFactory.h:34</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_html_a11c5b7a921ed94682f5d3aea3370af59"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a11c5b7a921ed94682f5d3aea3370af59">ROCKY_NAMESPACE::TerrainStateFactory::pipelineConfig</a></div><div class="ttdeci">vsg::ref_ptr&lt; vsg::GraphicsPipelineConfig &gt; pipelineConfig</div><div class="ttdoc">Config object for creating the terrain's graphics pipeline.</div><div class="ttdef"><b>Definition:</b> TerrainStateFactory.h:54</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_html_a6bfdb35085cacd9c9a0003b6fc7ba18a"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#a6bfdb35085cacd9c9a0003b6fc7ba18a">ROCKY_NAMESPACE::TerrainStateFactory::textures</a></div><div class="ttdeci">struct ROCKY_NAMESPACE::TerrainStateFactory::@5 textures</div><div class="ttdoc">stock samplers to use for terrain textures</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_html_aa3ef561bb3c1e73b447aa09e8e6bea72"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aa3ef561bb3c1e73b447aa09e8e6bea72">ROCKY_NAMESPACE::TerrainStateFactory::shaderSet</a></div><div class="ttdeci">vsg::ref_ptr&lt; vsg::ShaderSet &gt; shaderSet</div><div class="ttdef"><b>Definition:</b> TerrainStateFactory.h:58</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_html_aca5856aa20de84f83e3a3e06884defc7"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#aca5856aa20de84f83e3a3e06884defc7">ROCKY_NAMESPACE::TerrainStateFactory::defaultTileDescriptors</a></div><div class="ttdeci">TerrainTileDescriptors defaultTileDescriptors</div><div class="ttdef"><b>Definition:</b> TerrainStateFactory.h:64</div></div>
-<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_html_acc444b2108950870376d2a0bfb6e4f16"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory.html#acc444b2108950870376d2a0bfb6e4f16">ROCKY_NAMESPACE::TerrainStateFactory::status</a></div><div class="ttdeci">Status status</div><div class="ttdoc">Status of the factory.</div><div class="ttdef"><b>Definition:</b> TerrainStateFactory.h:49</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_html"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html">ROCKY_NAMESPACE::TerrainState</a></div><div class="ttdef"><b>Definition:</b> TerrainState.h:34</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_html_a1f021a916ba766ed212c25ff0be0f044"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a1f021a916ba766ed212c25ff0be0f044">ROCKY_NAMESPACE::TerrainState::pipelineConfig</a></div><div class="ttdeci">vsg::ref_ptr&lt; vsg::GraphicsPipelineConfig &gt; pipelineConfig</div><div class="ttdoc">Config object for creating the terrain's graphics pipeline.</div><div class="ttdef"><b>Definition:</b> TerrainState.h:54</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_html_a4123bbb2d815de5ec72da51de8054bcb"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a4123bbb2d815de5ec72da51de8054bcb">ROCKY_NAMESPACE::TerrainState::status</a></div><div class="ttdeci">Status status</div><div class="ttdoc">Status of the factory.</div><div class="ttdef"><b>Definition:</b> TerrainState.h:49</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_html_a7d1168529710048ae9e5f80ff3be930f"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a7d1168529710048ae9e5f80ff3be930f">ROCKY_NAMESPACE::TerrainState::textures</a></div><div class="ttdeci">struct ROCKY_NAMESPACE::TerrainState::@5 textures</div><div class="ttdoc">stock samplers to use for terrain textures</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_html_a8ddf338309627a481f44a2da34ba0ae1"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#a8ddf338309627a481f44a2da34ba0ae1">ROCKY_NAMESPACE::TerrainState::defaultTileDescriptors</a></div><div class="ttdeci">TerrainTileDescriptors defaultTileDescriptors</div><div class="ttdef"><b>Definition:</b> TerrainState.h:64</div></div>
+<div class="ttc" id="aclass_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_html_ac7f3063df9fd493a24c647258f4f901b"><div class="ttname"><a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state.html#ac7f3063df9fd493a24c647258f4f901b">ROCKY_NAMESPACE::TerrainState::shaderSet</a></div><div class="ttdeci">vsg::ref_ptr&lt; vsg::ShaderSet &gt; shaderSet</div><div class="ttdef"><b>Definition:</b> TerrainState.h:58</div></div>
 <div class="ttc" id="anamespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></div><div class="ttdef"><b>Definition:</b> Callbacks.h:13</div></div>
-<div class="ttc" id="astruct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def_html"><div class="ttname"><a href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_factory_1_1_texture_def.html">ROCKY_NAMESPACE::TerrainStateFactory::TextureDef</a></div><div class="ttdoc">Defines a single texutre and its (possible shared) sampler.</div><div class="ttdef"><b>Definition:</b> TerrainStateFactory.h:84</div></div>
+<div class="ttc" id="astruct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def_html"><div class="ttname"><a href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_terrain_state_1_1_texture_def.html">ROCKY_NAMESPACE::TerrainState::TextureDef</a></div><div class="ttdoc">Defines a single texutre and its (possible shared) sampler.</div><div class="ttdef"><b>Definition:</b> TerrainState.h:84</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
