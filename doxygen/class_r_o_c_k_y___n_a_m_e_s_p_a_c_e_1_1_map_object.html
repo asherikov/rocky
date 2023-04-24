@@ -69,27 +69,52 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ROCKY_NAMESPACE::MapObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">ROCKY_NAMESPACE::MapObject Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_viewpoint_8h_source.html">Viewpoint.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_application_8h_source.html">Application.h</a>&gt;</code></p>
 
-<p>Inherited by <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_simple_map_object.html">ROCKY_NAMESPACE::SimpleMapObject</a>.</p>
+<p>Inherits rocky::Inherit&lt; Object, MapObject &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a141be37be799338434652ef423a3a554"><td class="memItemLeft" align="right" valign="top"><a id="a141be37be799338434652ef423a3a554"></a>
-virtual const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html">GeoPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#a141be37be799338434652ef423a3a554">position</a> () const =0</td></tr>
-<tr class="memdesc:a141be37be799338434652ef423a3a554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center position of the object. <br /></td></tr>
-<tr class="separator:a141be37be799338434652ef423a3a554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8579b47bd975741b770d4da59e535777"><td class="memItemLeft" align="right" valign="top"><a id="a8579b47bd975741b770d4da59e535777"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#a8579b47bd975741b770d4da59e535777">MapObject</a> ()</td></tr>
+<tr class="memdesc:a8579b47bd975741b770d4da59e535777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty map object. <br /></td></tr>
+<tr class="separator:a8579b47bd975741b770d4da59e535777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77ad752e66b5b352df6e9b21e60f7d2"><td class="memItemLeft" align="right" valign="top"><a id="aa77ad752e66b5b352df6e9b21e60f7d2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#aa77ad752e66b5b352df6e9b21e60f7d2">MapObject</a> (shared_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_attachment.html">Attachment</a> &gt; attachment)</td></tr>
+<tr class="memdesc:aa77ad752e66b5b352df6e9b21e60f7d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a map object with a single attachment. <br /></td></tr>
+<tr class="separator:aa77ad752e66b5b352df6e9b21e60f7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2bf5c1434f8ccb2d7cc118857a256a"><td class="memItemLeft" align="right" valign="top"><a id="a3c2bf5c1434f8ccb2d7cc118857a256a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#a3c2bf5c1434f8ccb2d7cc118857a256a">MapObject</a> (Attachments <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#a9b09e99c1a4de09ba01ba2740091aff4">attachments</a>)</td></tr>
+<tr class="memdesc:a3c2bf5c1434f8ccb2d7cc118857a256a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a map object with zero or more attachments. <br /></td></tr>
+<tr class="separator:a3c2bf5c1434f8ccb2d7cc118857a256a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a63e0c7624ea49b3b1f0b4987b0cb0c21"><td class="memItemLeft" align="right" valign="top"><a id="a63e0c7624ea49b3b1f0b4987b0cb0c21"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#a63e0c7624ea49b3b1f0b4987b0cb0c21">visible</a> = true</td></tr>
+<tr class="memdesc:a63e0c7624ea49b3b1f0b4987b0cb0c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this map object (and all its attachments) will render. <br /></td></tr>
+<tr class="separator:a63e0c7624ea49b3b1f0b4987b0cb0c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b09e99c1a4de09ba01ba2740091aff4"><td class="memItemLeft" align="right" valign="top"><a id="a9b09e99c1a4de09ba01ba2740091aff4"></a>
+Attachments&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#a9b09e99c1a4de09ba01ba2740091aff4">attachments</a></td></tr>
+<tr class="memdesc:a9b09e99c1a4de09ba01ba2740091aff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attachments associated with this map object. <br /></td></tr>
+<tr class="separator:a9b09e99c1a4de09ba01ba2740091aff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad762d95816f729741a138dc6961b6365"><td class="memItemLeft" align="right" valign="top"><a id="ad762d95816f729741a138dc6961b6365"></a>
+vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_transform.html">GeoTransform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html#ad762d95816f729741a138dc6961b6365">xform</a></td></tr>
+<tr class="memdesc:ad762d95816f729741a138dc6961b6365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top-level transform for this object (optional) <br /></td></tr>
+<tr class="separator:ad762d95816f729741a138dc6961b6365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for any object that has a position on a <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map.html">Map</a>. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/rocky/<a class="el" href="_viewpoint_8h_source.html">Viewpoint.h</a></li>
+<div class="textblock"><p>An object placed somewhere on the map. A <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html">MapObject</a> itself has no visual represetation. You can add attachments to render different things like icons, models, geometries, or text. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/rocky_vsg/<a class="el" href="_application_8h_source.html">Application.h</a></li>
+<li>src/rocky_vsg/Application.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

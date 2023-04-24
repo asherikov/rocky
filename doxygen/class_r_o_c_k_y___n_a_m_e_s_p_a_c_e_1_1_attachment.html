@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rocky: ROCKY_NAMESPACE::SimpleMapObject Class Reference</title>
+<title>Rocky: ROCKY_NAMESPACE::Attachment Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,46 +63,39 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></li><li class="navelem"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_simple_map_object.html">SimpleMapObject</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></li><li class="navelem"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_attachment.html">Attachment</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_simple_map_object-members.html">List of all members</a>  </div>
+<a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_attachment-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ROCKY_NAMESPACE::SimpleMapObject Class Reference</div>  </div>
+<div class="title">ROCKY_NAMESPACE::Attachment Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_viewpoint_8h_source.html">Viewpoint.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_application_8h_source.html">Application.h</a>&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html">ROCKY_NAMESPACE::MapObject</a>.</p>
+<p>Inherits rocky::Inherit&lt; Object, Attachment &gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaf020efacc0fa0eed6469c6bb92b650e"><td class="memItemLeft" align="right" valign="top"><a id="aaf020efacc0fa0eed6469c6bb92b650e"></a>
-const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html">GeoPoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_simple_map_object.html#aaf020efacc0fa0eed6469c6bb92b650e">position</a> () const override</td></tr>
-<tr class="memdesc:aaf020efacc0fa0eed6469c6bb92b650e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center position of the object. <br /></td></tr>
-<tr class="separator:aaf020efacc0fa0eed6469c6bb92b650e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a913da7d674a47b7da2809bb1c17c506a"><td class="memItemLeft" align="right" valign="top"><a id="a913da7d674a47b7da2809bb1c17c506a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleMapObject</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_simple_map_object.html">SimpleMapObject</a> &amp;)=default</td></tr>
-<tr class="separator:a913da7d674a47b7da2809bb1c17c506a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae758b728b40708fbc3c0131fa69387d7"><td class="memItemLeft" align="right" valign="top"><a id="ae758b728b40708fbc3c0131fa69387d7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleMapObject</b> (const <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html">GeoPoint</a> &amp;point_)</td></tr>
-<tr class="separator:ae758b728b40708fbc3c0131fa69387d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754ec093eff0b4583f7454214d6baced"><td class="memItemLeft" align="right" valign="top"><a id="a754ec093eff0b4583f7454214d6baced"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (vsg::ref_ptr&lt; vsg::Group &gt; &amp;scene_graph, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;runtime)</td></tr>
+<tr class="separator:a754ec093eff0b4583f7454214d6baced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aebbc1a706d14e1f3e176e14ff77cd91f"><td class="memItemLeft" align="right" valign="top"><a id="aebbc1a706d14e1f3e176e14ff77cd91f"></a>
-<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_point.html">GeoPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>point</b></td></tr>
-<tr class="separator:aebbc1a706d14e1f3e176e14ff77cd91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8670c4ea65b8025f71fec1664e755fa"><td class="memItemLeft" align="right" valign="top"><a id="aa8670c4ea65b8025f71fec1664e755fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b> = true</td></tr>
+<tr class="separator:aa8670c4ea65b8025f71fec1664e755fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simplest possible map object - just a position. </p>
+<div class="textblock"><p>Renderable component that attaches to a <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html">MapObject</a>, inheriting its <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_transform.html">GeoTransform</a> and other shared characteristics. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/rocky/<a class="el" href="_viewpoint_8h_source.html">Viewpoint.h</a></li>
+<li>src/rocky_vsg/<a class="el" href="_application_8h_source.html">Application.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
