@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['result_656',['Result',['../struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_result.html',1,'ROCKY_NAMESPACE']]],
-  ['runtime_657',['Runtime',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html',1,'ROCKY_NAMESPACE']]]
+  ['polygon_656',['Polygon',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_polygon.html',1,'ROCKY_NAMESPACE']]],
+  ['positionedobject_657',['PositionedObject',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_positioned_object.html',1,'ROCKY_NAMESPACE']]],
+  ['profile_658',['Profile',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_profile.html',1,'ROCKY_NAMESPACE']]],
+  ['proxysettings_659',['ProxySettings',['../class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_proxy_settings.html',1,'ROCKY_NAMESPACE']]]
 ];

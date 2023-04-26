@@ -69,7 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_line_string-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ROCKY_NAMESPACE::LineString Class Reference</div>  </div>
@@ -99,18 +99,22 @@ template&lt;typename T &gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_line_string.html#a520170cce7bc4338e1ea3410e2582ddb">setStyle</a> (const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_line_style.html">LineStyle</a> &amp;)</td></tr>
 <tr class="memdesc:a520170cce7bc4338e1ea3410e2582ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the rendering style for this line string. <br /></td></tr>
 <tr class="separator:a520170cce7bc4338e1ea3410e2582ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4ab12f6e8bc537776cef8b2bf66ba5"><td class="memItemLeft" align="right" valign="top"><a id="a0f4ab12f6e8bc537776cef8b2bf66ba5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (vsg::ref_ptr&lt; vsg::Group &gt; &amp;scene_graph, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;runtime) override</td></tr>
-<tr class="separator:a0f4ab12f6e8bc537776cef8b2bf66ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeead8d08495dbff0cf47e89c3274e096"><td class="memItemLeft" align="right" valign="top"><a id="aeead8d08495dbff0cf47e89c3274e096"></a>
+const <a class="el" href="struct_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_line_style.html">LineStyle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_line_string.html#aeead8d08495dbff0cf47e89c3274e096">style</a> () const</td></tr>
+<tr class="memdesc:aeead8d08495dbff0cf47e89c3274e096"><td class="mdescLeft">&#160;</td><td class="mdescRight">rendering style for the geometry <br /></td></tr>
+<tr class="separator:aeead8d08495dbff0cf47e89c3274e096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f747711638547d2c1ad2377c6ddcd1"><td class="memItemLeft" align="right" valign="top"><a id="a97f747711638547d2c1ad2377c6ddcd1"></a>
+vsg::ref_ptr&lt; vsg::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getOrCreateNode</b> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;runtime) override</td></tr>
+<tr class="separator:a97f747711638547d2c1ad2377c6ddcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:afd30c072cbb1926b0173cec4d5c85c69"><td class="memItemLeft" align="right" valign="top"><a id="afd30c072cbb1926b0173cec4d5c85c69"></a>
+vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_bind_line_style.html">engine::BindLineStyle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_bindStyle</b></td></tr>
+<tr class="separator:afd30c072cbb1926b0173cec4d5c85c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d340e99de1a38157c90b2d4fd316247"><td class="memItemLeft" align="right" valign="top"><a id="a0d340e99de1a38157c90b2d4fd316247"></a>
 vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_string_geometry.html">engine::LineStringGeometry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_geometry</b></td></tr>
 <tr class="separator:a0d340e99de1a38157c90b2d4fd316247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67437d786de79e9b64232f574a5b1125"><td class="memItemLeft" align="right" valign="top"><a id="a67437d786de79e9b64232f574a5b1125"></a>
-vsg::ref_ptr&lt; <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_string_style_node.html">engine::LineStringStyleNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_styleNode</b></td></tr>
-<tr class="separator:a67437d786de79e9b64232f574a5b1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_line_string.html">LineString</a> <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_attachment.html">Attachment</a> </p>

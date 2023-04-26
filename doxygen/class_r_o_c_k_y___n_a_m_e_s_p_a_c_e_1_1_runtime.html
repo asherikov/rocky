@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#a124af71d41a7d25b8605b4a97b4d28d3">runDuringUpdate</a> (vsg::ref_ptr&lt; vsg::Operation &gt; function, std::function&lt; float()&gt; get_priority=nullptr)</td></tr>
 <tr class="memdesc:a124af71d41a7d25b8605b4a97b4d28d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a function to run during the update pass. <br /></td></tr>
 <tr class="separator:a124af71d41a7d25b8605b4a97b4d28d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5c20d095c36517f760b7c1f7a8c3db"><td class="memItemLeft" align="right" valign="top"><a id="a6f5c20d095c36517f760b7c1f7a8c3db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runDuringUpdate</b> (std::function&lt; void()&gt; function)</td></tr>
+<tr class="separator:a6f5c20d095c36517f760b7c1f7a8c3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8259186ee5f1b5ef3659b4db710378"><td class="memItemLeft" align="right" valign="top">util::Future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#abb8259186ee5f1b5ef3659b4db710378">compileAndAddChild</a> (vsg::ref_ptr&lt; vsg::Group &gt; parent, <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#a4a044dcb4398ee00604404edcf9e3da1">NodeFactory</a> factory, const util::job &amp;config={ })</td></tr>
 <tr class="separator:abb8259186ee5f1b5ef3659b4db710378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa16de15e7e83c6f44ce8261df1bae0e6"><td class="memItemLeft" align="right" valign="top"><a id="aa16de15e7e83c6f44ce8261df1bae0e6"></a>
@@ -104,8 +107,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aa16de15e7e83c6f44ce8261df1bae0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a269f5b61c4e532503e1c446fa495c739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#a269f5b61c4e532503e1c446fa495c739">dirtyShaders</a> ()</td></tr>
 <tr class="separator:a269f5b61c4e532503e1c446fa495c739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619950a2894655e30b48cfc58b33d4d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#a619950a2894655e30b48cfc58b33d4d0">dirty</a> (vsg::Object *object)</td></tr>
-<tr class="memdesc:a619950a2894655e30b48cfc58b33d4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the state generator for LineStrings.  <a href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#a619950a2894655e30b48cfc58b33d4d0">More...</a><br /></td></tr>
+<tr class="memitem:a619950a2894655e30b48cfc58b33d4d0"><td class="memItemLeft" align="right" valign="top"><a id="a619950a2894655e30b48cfc58b33d4d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html#a619950a2894655e30b48cfc58b33d4d0">dirty</a> (vsg::Object *object)</td></tr>
+<tr class="memdesc:a619950a2894655e30b48cfc58b33d4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile and object. <br /></td></tr>
 <tr class="separator:a619950a2894655e30b48cfc58b33d4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -167,28 +171,7 @@ vsg::Paths&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Schedules data creation; the resulting node or nodes get added to "parent" if the operation suceeds. Returns a future you can check for completion. </p>
-
-</div>
-</div>
-<a id="a619950a2894655e30b48cfc58b33d4d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a619950a2894655e30b48cfc58b33d4d0">&#9670;&nbsp;</a></span>dirty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Runtime::dirty </td>
-          <td>(</td>
-          <td class="paramtype">vsg::Object *&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Access the state generator for LineStrings. </p>
-<p>Compile and object </p>
+<p>Schedules data creation; the resulting node or nodes get added to "parent" if the operation suceeds. Returns a future so you can check for completion. </p>
 
 </div>
 </div>
