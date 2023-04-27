@@ -82,15 +82,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40f00f03982454d95c69e8d5c1776969"><td class="memItemLeft" align="right" valign="top"><a id="a40f00f03982454d95c69e8d5c1776969"></a>
-virtual vsg::ref_ptr&lt; vsg::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getOrCreateNode</b> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;runtime)=0</td></tr>
-<tr class="separator:a40f00f03982454d95c69e8d5c1776969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3769f7e85c6c9b196b43bf95dbde468b"><td class="memItemLeft" align="right" valign="top"><a id="a3769f7e85c6c9b196b43bf95dbde468b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createNode</b> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;runtime)=0</td></tr>
+<tr class="separator:a3769f7e85c6c9b196b43bf95dbde468b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa8670c4ea65b8025f71fec1664e755fa"><td class="memItemLeft" align="right" valign="top"><a id="aa8670c4ea65b8025f71fec1664e755fa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b> = true</td></tr>
 <tr class="separator:aa8670c4ea65b8025f71fec1664e755fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b01579df2b97ddd0aac6eb1cc67432c"><td class="memItemLeft" align="right" valign="top"><a id="a8b01579df2b97ddd0aac6eb1cc67432c"></a>
+vsg::ref_ptr&lt; vsg::Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>node</b></td></tr>
+<tr class="separator:a8b01579df2b97ddd0aac6eb1cc67432c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Renderable component that attaches to a <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_map_object.html">MapObject</a>, inheriting its <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_geo_transform.html">GeoTransform</a> and other shared characteristics. </p>
