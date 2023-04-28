@@ -83,12 +83,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a46692b705d573e3829ffa5118cc51809"><td class="memItemLeft" align="right" valign="top"><a id="a46692b705d573e3829ffa5118cc51809"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_state.html#a46692b705d573e3829ffa5118cc51809">~LineState</a> ()</td></tr>
-<tr class="memdesc:a46692b705d573e3829ffa5118cc51809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the Line state generator and initialize its pipeline configurator. <br /></td></tr>
+<tr class="memdesc:a46692b705d573e3829ffa5118cc51809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the mesh state objects. <br /></td></tr>
 <tr class="separator:a46692b705d573e3829ffa5118cc51809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac3606fb61a4b55c091efc0826bce2a1c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_state.html#ac3606fb61a4b55c091efc0826bce2a1c">initialize</a> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;)</td></tr>
+<tr class="memitem:ac3606fb61a4b55c091efc0826bce2a1c"><td class="memItemLeft" align="right" valign="top"><a id="ac3606fb61a4b55c091efc0826bce2a1c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_state.html#ac3606fb61a4b55c091efc0826bce2a1c">initialize</a> (<a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;)</td></tr>
+<tr class="memdesc:ac3606fb61a4b55c091efc0826bce2a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the state commands necessary for rendering lines. <br /></td></tr>
 <tr class="separator:ac3606fb61a4b55c091efc0826bce2a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -96,19 +98,18 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:af38f19be4a909c307e9d83d6541d11e1"><td class="memItemLeft" align="right" valign="top"><a id="af38f19be4a909c307e9d83d6541d11e1"></a>
 static <a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
 <tr class="separator:af38f19be4a909c307e9d83d6541d11e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb27083c209bd656682e1e09557d321"><td class="memItemLeft" align="right" valign="top"><a id="accb27083c209bd656682e1e09557d321"></a>
-static vsg::ref_ptr&lt; vsg::GraphicsPipelineConfigurator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_state.html#accb27083c209bd656682e1e09557d321">pipelineConfig</a></td></tr>
-<tr class="memdesc:accb27083c209bd656682e1e09557d321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton pipeline conifig object created when the object is first constructed. <br /></td></tr>
+<tr class="memitem:accb27083c209bd656682e1e09557d321"><td class="memItemLeft" align="right" valign="top">static vsg::ref_ptr&lt; vsg::GraphicsPipelineConfigurator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_state.html#accb27083c209bd656682e1e09557d321">pipelineConfig</a></td></tr>
 <tr class="separator:accb27083c209bd656682e1e09557d321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d253c82c7fc44c8fe5154cd55daadfd"><td class="memItemLeft" align="right" valign="top"><a id="a2d253c82c7fc44c8fe5154cd55daadfd"></a>
-static vsg::StateGroup::StateCommands&#160;</td><td class="memItemRight" valign="bottom"><b>pipelineStateCommands</b></td></tr>
+static vsg::StateGroup::StateCommands&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1engine_1_1_line_state.html#a2d253c82c7fc44c8fe5154cd55daadfd">pipelineStateCommands</a></td></tr>
+<tr class="memdesc:a2d253c82c7fc44c8fe5154cd55daadfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton state commands for establishing the pipeline. <br /></td></tr>
 <tr class="separator:a2d253c82c7fc44c8fe5154cd55daadfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Creates commands for rendering line primitives and holds the singleton pipeline configurator for line drawing state. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac3606fb61a4b55c091efc0826bce2a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3606fb61a4b55c091efc0826bce2a1c">&#9670;&nbsp;</a></span>initialize()</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="accb27083c209bd656682e1e09557d321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb27083c209bd656682e1e09557d321">&#9670;&nbsp;</a></span>pipelineConfig</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,11 +118,7 @@ static vsg::StateGroup::StateCommands&#160;</td><td class="memItemRight" valign=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LineState::initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_r_o_c_k_y___n_a_m_e_s_p_a_c_e_1_1_runtime.html">Runtime</a> &amp;&#160;</td>
-          <td class="paramname"><em>runtime</em></td><td>)</td>
-          <td></td>
+          <td class="memname">vsg::ref_ptr&lt; vsg::GraphicsPipelineConfigurator &gt; LineState::pipelineConfig</td>
         </tr>
       </table>
   </td>
@@ -130,7 +127,7 @@ static vsg::StateGroup::StateCommands&#160;</td><td class="memItemRight" valign=
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create the state commands necessary for rendering lines. Upi should add these to an existing StateGroup. </p>
+<p>Singleton pipeline config object created when the object is first constructed, for access to pipeline and desriptor set layouts. </p>
 
 </div>
 </div>
