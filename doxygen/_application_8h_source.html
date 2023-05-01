@@ -79,8 +79,8 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vsg/app/Viewer.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vsg/app/Window.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vsg/nodes/Group.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vsg/text/Text.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vsg/app/RenderGraph.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vsg/nodes/Group.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -102,37 +102,38 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> remove(shared_ptr&lt;MapObject&gt; <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        rocky::InstanceVSG instance;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        vsg::ref_ptr&lt;rocky::MapNode&gt; mapNode;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        vsg::ref_ptr&lt;vsg::Viewer&gt; viewer;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        rocky::InstanceVSG instance;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        vsg::ref_ptr&lt;rocky::MapNode&gt; mapNode;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        vsg::ref_ptr&lt;vsg::Viewer&gt; viewer;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        vsg::ref_ptr&lt;vsg::RenderGraph&gt; renderGraph;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        vsg::ref_ptr&lt;vsg::Window&gt; mainWindow;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        vsg::ref_ptr&lt;vsg::Group&gt; root;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        vsg::ref_ptr&lt;vsg::Group&gt; mainScene;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::function&lt;void()&gt; updateFunction;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Application(<span class="keyword">const</span> Application&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Application(Application&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">bool</span> _apilayer = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span> _debuglayer = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span> _vsync = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        AttachmentRenderers _renderers;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">struct </span>Addition {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            vsg::ref_ptr&lt;vsg::Node&gt; node;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            vsg::CompileResult compileResult;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::mutex _add_remove_mutex;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::list&lt;util::Future&lt;Addition&gt;&gt; _additions;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::list&lt;vsg::ref_ptr&lt;vsg::Node&gt;&gt; _removals;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">void</span> processAdditionsAndRemovals();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::vector&lt;vsg::ref_ptr&lt;vsg::Node&gt;&gt; additionalRenderStages;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Application(<span class="keyword">const</span> Application&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Application(Application&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span> _apilayer = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span> _debuglayer = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">bool</span> _vsync = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        AttachmentRenderers _renderers;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">struct </span>Addition {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            vsg::ref_ptr&lt;vsg::Node&gt; node;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            vsg::CompileResult compileResult;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::mutex _add_remove_mutex;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::list&lt;util::Future&lt;Addition&gt;&gt; _additions;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::list&lt;vsg::ref_ptr&lt;vsg::Node&gt;&gt; _removals;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> processAdditionsAndRemovals();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="anamespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="namespace_r_o_c_k_y___n_a_m_e_s_p_a_c_e.html">ROCKY_NAMESPACE</a></div><div class="ttdef"><b>Definition:</b> Callbacks.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
