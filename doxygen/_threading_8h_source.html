@@ -403,7 +403,7 @@ $(function() {
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            Future&lt;T&gt; promise,</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            <span class="keyword">const</span> job&amp; config = { })</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        {</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            job_scheduler::Delegate delegate = [task, promise]() <span class="keyword">mutable</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            std::function&lt;bool()&gt; delegate = [task, promise]() <span class="keyword">mutable</span></div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            {</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                <span class="keywordtype">bool</span> good = !promise.canceled();</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                <span class="keywordflow">if</span> (good)</div>
@@ -420,7 +420,7 @@ $(function() {
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        }</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    };</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keyword">class </span>job_metrics</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT job_metrics</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    {</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keyword">struct </span>scheduler_metrics</div>
@@ -448,31 +448,31 @@ $(function() {
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            <span class="keywordflow">return</span> totalJobsPending() + totalJobsRunning();</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        }</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        job_metrics();</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        std::vector&lt;std::unique_ptr&lt;scheduler_metrics&gt;&gt; _schedulers;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>job_scheduler;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <span class="keyword">static</span> job_metrics _singleton;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    };</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT job_scheduler</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        job_scheduler(</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            <span class="keyword">const</span> std::string&amp; name = <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;            <span class="keywordtype">unsigned</span> concurrency = 2u);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        ~job_scheduler();</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160; </div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keywordtype">void</span> setConcurrency(<span class="keywordtype">unsigned</span> value);</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160; </div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <span class="keywordtype">unsigned</span> getConcurrency() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordtype">void</span> cancelAll();</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keyword">using</span> Delegate = std::function&lt;bool()&gt;;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;std::shared_ptr&lt;scheduler_metrics&gt;&gt;&amp; get();</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        job_metrics();</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        std::vector&lt;std::shared_ptr&lt;scheduler_metrics&gt;&gt; _schedulers;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>job_scheduler;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keyword">static</span> job_metrics _singleton;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    };</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT job_scheduler</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        job_scheduler(</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;            <span class="keyword">const</span> std::string&amp; name = <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            <span class="keywordtype">unsigned</span> concurrency = 2u);</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        ~job_scheduler();</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        <span class="keywordtype">void</span> setConcurrency(<span class="keywordtype">unsigned</span> value);</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="keywordtype">unsigned</span> getConcurrency() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="keywordtype">void</span> cancelAll();</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160; </div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <span class="keywordtype">void</span> dispatch(<span class="keyword">const</span> job&amp; config, Delegate&amp; delegate);</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <span class="keywordtype">void</span> dispatch(<span class="keyword">const</span> job&amp; config, std::function&lt;<span class="keywordtype">bool</span>()&gt;&amp; delegate);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keyword">public</span>: <span class="comment">// statics</span></div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160; </div>
@@ -492,10 +492,10 @@ $(function() {
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <span class="keyword">struct </span>QueuedJob {</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            QueuedJob() { }</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            QueuedJob(<span class="keyword">const</span> job&amp; job, <span class="keyword">const</span> Delegate&amp; delegate, std::shared_ptr&lt;Semaphore&gt; sema) :</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            QueuedJob(<span class="keyword">const</span> job&amp; job, <span class="keyword">const</span> std::function&lt;<span class="keywordtype">bool</span>()&gt;&amp; delegate, std::shared_ptr&lt;Semaphore&gt; sema) :</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                _job(job), _delegate(delegate), _groupsema(sema) { }</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            job _job;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;            Delegate _delegate;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;            std::function&lt;bool()&gt; _delegate;</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            std::shared_ptr&lt;Semaphore&gt; _groupsema;</div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;            <span class="keywordtype">bool</span> operator &lt; (<span class="keyword">const</span> QueuedJob&amp; rhs)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                <span class="keywordtype">float</span> lp = _job.priority ? _job.priority() : -FLT_MAX;</div>
