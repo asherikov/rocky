@@ -381,7 +381,7 @@ $(function() {
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span>job_scheduler;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    };</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keyword">struct </span>job</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keyword">struct </span>ROCKY_EXPORT job</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    {</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        std::string name;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        std::function&lt;float()&gt; priority = <span class="keyword">nullptr</span>;</div>
@@ -411,13 +411,13 @@ $(function() {
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                <span class="keywordflow">return</span> good;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            };</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            job_scheduler* scheduler = config.scheduler ? config.scheduler : job_scheduler::get(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            scheduler_dispatch(delegate, config);</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <span class="keywordflow">if</span> (scheduler)</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                scheduler-&gt;dispatch(config, delegate);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <span class="keywordflow">return</span> promise;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        }</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            <span class="keywordflow">return</span> promise;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        }</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> scheduler_dispatch(std::function&lt;<span class="keywordtype">bool</span>()&gt; del, <span class="keyword">const</span> job&amp; config);</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    };</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="keyword">class </span>ROCKY_EXPORT job_metrics</div>
