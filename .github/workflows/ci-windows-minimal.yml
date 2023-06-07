@@ -42,7 +42,7 @@ jobs:
     - name: Install the Vulkan SDK
       if: steps.cache-vulkan-sdk.outputs.cache-hit != 'true'
       shell: cmd
-      run: .\VulkanSDK.exe /S
+      run: .\VulkanSDK.exe --accept-licenses --default-answer --confirm-command install
 
     - name: Installing vcpkg (windows)
       shell: 'bash'
