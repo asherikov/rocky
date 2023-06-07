@@ -44,8 +44,7 @@ jobs:
       if: steps.cache-vulkan-sdk.outputs.cache-hit != 'true'
       shell: 'bash'
       run: |
-        $installer = Start-Process -FilePath VulkanSDK-1.3.231.1-Installer.exe -Wait -PassThru -ArgumentList @("/S");
-        $installer.WaitForExit();
+        VulkanSDK-1.3.231.1-Installer.exe /S
 
     - name: Installing vcpkg (windows)
       shell: 'bash'
