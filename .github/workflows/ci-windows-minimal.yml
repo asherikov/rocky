@@ -46,14 +46,14 @@ jobs:
         echo "HELLO! ******** My github token is ${{ secrets.GITHUB_TOKEN }}"
         ${{ matrix.mono }} `./vcpkg/vcpkg fetch nuget | tail -n 1` \
         sources add \
-        -source "https://nuget.pkg.github.com/pelicanmapping/index.json" \
+        -source "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json" \
         -storepasswordincleartext \
         -name "GitHub" \
-        -username "pelicanmapping" \
+        -username "${{github.repository_owner}}" \
         -password "${{ secrets.GITHUB_TOKEN }}" 
         ${{ matrix.mono }} `./vcpkg/vcpkg fetch nuget | tail -n 1` \
           setapikey "${{ secrets.GITHUB_TOKEN }}" \
-          -source "https://nuget.pkg.github.com/pelicanmapping/index.json"
+          -source "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json"
         
     - name: Check the Cache for the Vulkan SDK
       id: cache-vulkan-sdk
