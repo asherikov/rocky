@@ -43,6 +43,7 @@ jobs:
       working-directory: ${{ matrix.VCPKG_WORKSPACE }}
       shell: 'bash'
       run: |
+        echo "HELLO! ******** My github token is ${{ secrets.GITHUB_TOKEN }}"
         ${{ matrix.mono }} `./vcpkg/vcpkg fetch nuget | tail -n 1` \
         sources add \
         -source "https://nuget.pkg.github.com/pelicanmapping/index.json" \
@@ -70,3 +71,28 @@ jobs:
       if: steps.cache-vulkan-sdk.outputs.cache-hit != 'true'
       shell: cmd
       run: .\VulkanSDK.exe --accept-licenses --default-answer --confirm-command install
+
+    - name: Create Build Environment
+      run: |
+        cmake -E make_directory ${{runner.workspace}}/build
+
+    - name: Configure and Build Dependencies
+      shell: bash
+      working-directory: ${{ runner.workspace }}/build
+      run: cmake $GITHUB_WORKSPACE -DWIN32_USE_MP=ON -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DROCKY_SUPPORTS_GDAL=OFF -DROCKY_SUPPORTS_MBTILES=OFF -DCMAKE_TOOLCHAIN_FILE=${{ matrix.VCPKG_WORKSPACE }}/vcpkg/scripts/buildsystems/vcpkg.cmake -DVCPKG_BUILD_TYPE=release -DVCPKG_MANIFEST_DIR=$GITHUB_WORKSPACE/vcpkg/minimal
+      env:
+        VULKAN_SDK: "C:\\VulkanSDK\\1.3.231.1"
+      
+    - name: 'Upload cmake configure log artifact'
+      uses: actions/upload-artifact@v3
+      if: ${{ failure() }}
+      with:
+        name: cmake-log
+        path: |
+          ${{ runner.workspace }}/build/CMakeCache.txt
+        retention-days: 1
+
+    - name: Build
+      working-directory: ${{ runner.workspace }}/build
+      shell: bash
+      run: cmake --build . --config $BUILD_TYPE
