@@ -75,6 +75,11 @@ jobs:
     - name: Create Build Environment
       run: |
         cmake -E make_directory ${{runner.workspace}}/build
+        
+    - name: Test VCPKG INSTALL DEBUG
+      working-directory: ${{ matrix.VCPKG_WORKSPACE }}
+      shell: 'bash'
+      run: ./vcpkg/vcpkg install cpp-httplib --debug        
 
     - name: Configure and Build Dependencies
       shell: bash
