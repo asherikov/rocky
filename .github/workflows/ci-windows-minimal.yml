@@ -12,6 +12,8 @@ jobs:
 
   build:
     runs-on: ${{ matrix.os }}
+    
+    permissions: read-all|write-all
 
     strategy:
       matrix:
